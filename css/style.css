@@ -331,6 +331,9 @@ ul {
     right: 0px;
     top: 14px;
     left: 178px;
+
+
+    
 }
 
 
@@ -609,5 +612,18 @@ ul {
 .sec2-creative {
     margin: 7rem 7rem ;
     background-color: #111;
-    height: 100vh;
+    height: auto;
+}
+
+
+.port_disrip {
+  border-radius: 27% 73% 58% 42% / 34% 45% 55% 66% ;
+  background-color: #d79922;
+  padding: 5rem;
+  height: 700px;
+}
+
+.nav_brand li a {
+  color: white;
+  font-size: 22px;
 }

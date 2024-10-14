@@ -86,7 +86,8 @@ body {
   overflow: hidden;
   overflow-y: auto;
   position: relative;
-  background-color: #d79922;
+  /* background-color: #d79922; */
+  background:linear-gradient(90deg, rgba(233,30,99,1) 33%, rgba(224,0,76,1) 88%, rgba(184,0,63,1) 100%);
   line-height: 1.6;
   font-family: Montserrat-Regural;
 }
@@ -412,7 +413,7 @@ ul {
 .profile-image {
     margin-top: 40px;
     border-radius: 38% 62% 52% 47% / 48% 77% 19% 52%;
-    background-color: #d79922;
+    background:linear-gradient(90deg, rgba(233,30,99,1) 33%, rgba(224,0,76,1) 88%, rgba(184,0,63,1) 100%);
     padding: 4rem;
 }
 
@@ -618,7 +619,7 @@ ul {
 
 .port_disrip {
   border-radius: 27% 73% 58% 42% / 34% 45% 55% 66% ;
-  background-color: #d79922;
+  background:linear-gradient(90deg, rgba(233,30,99,1) 33%, rgba(224,0,76,1) 88%, rgba(184,0,63,1) 100%);
   padding: 5rem;
   height: 700px;
 }

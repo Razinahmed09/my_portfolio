@@ -307,7 +307,7 @@ ul {
         font-family: 'Montserrat-Regural';
         color: #cbcbcb;
         font-size: 40px;
-        padding-top: 8rem;
+        padding-top: 4rem;
         text-transform: uppercase;
 }
 
@@ -614,6 +614,7 @@ ul {
     margin: 7rem 7rem ;
     background-color: #111;
     height: auto;
+    position: relative;
 }
 
 
@@ -627,4 +628,110 @@ ul {
 .nav_brand li a {
   color: white;
   font-size: 22px;
+  transition: all .2s ease-in-out ;
+}
+.nav_brand li:hover a  {
+  color:rgba(233,30,99,1) ;
+}
+.page_no h3 {
+  font-family: 'ITC-Garde-Bold';
+  color: white;
+  font-size: 140px;
+  border-bottom: 4px solid white;
+  display: inline;
+  position: absolute;
+  bottom: 25px;
+  left: 32px;
+}
+.sec2-creative .top_to_bottom a {
+  top: 495px;
+}
+
+
+
+
+.sec3-port .process-section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.sec3-port h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: 'ITC-GardePro-Bold';
+  color: #FFFFFF;
+}
+.sec3-port h2 span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Beauty-Font';
+  margin-bottom: -80px;
+  background-image: linear-gradient(#ff4848, #fd9800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animName2 1s infinite;
+}
+.sec3-port .process-step {
+  margin-bottom: 25px;
+}
+
+.sec3-port .process-step p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.sec3-port .progress-bar {
+  position: relative;
+  background-color: #eee;
+  border-radius: 50px;
+  height: 12px;
+  width: 100%;
+}
+
+.sec3-port .progress {
+  background:linear-gradient(90deg, rgba(233,30,99,1) 33%, rgb(170, 0, 57) 88%, rgb(133, 0, 46) 100%);
+  height: 100%;
+  border-radius: 50px;
+  display: block;
+  animation: identifier 1s infinite;
+}
+
+.sec3-port .progress-label {
+  position: relative;
+  right: -50px;
+  top: -10px;
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 62% 75%, 51% 100%, 37% 75%, 0% 75%);
+  color: #fa0c4b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  align-items: normal;
+  
+}
+
+.port_intro p {
+  color: white;
+  margin-top: -20px;
+}
+
+@keyframes identifier {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 #da3f46;
+}
+
+100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+}
 }

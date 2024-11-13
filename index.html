@@ -16,6 +16,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -24,128 +25,10 @@
   </head>
 
   <body>
+    <!-- sec_1_banner -->
+
     <header class="sec1-banner">
       <section class="hero-sec">
-        <div class="home_social_icons">
-          <!-- /* From Uiverse.io by Zameerahmad01 */  -->
-          <ul class="example-2">
-            <li class="icon-content">
-              <a
-                data-social="linkedin"
-                aria-label="LinkedIn"
-                href="https://www.linkedin.com/in/razin-ahmed-a365a5255/"
-                target="_blank"
-              >
-                <div class="filled"></div>
-                <svg
-                  xml:space="preserve"
-                  viewBox="0 0 16 16"
-                  class="bi bi-linkedin"
-                  fill="currentColor"
-                  height="16"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                  ></path>
-                </svg>
-              </a>
-              <div class="tooltip">LinkedIn</div>
-            </li>
-            <li class="icon-content">
-              <a
-                data-social="github"
-                aria-label="GitHub"
-                href="https://github.com/Razinahmed09"
-                target="_blank"
-              >
-                <div class="filled"></div>
-                <svg
-                  xml:space="preserve"
-                  viewBox="0 0 16 16"
-                  class="bi bi-github"
-                  fill="currentColor"
-                  height="16"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                  ></path>
-                </svg>
-              </a>
-              <div class="tooltip">GitHub</div>
-            </li>
-            <li class="icon-content">
-              <a
-                data-social="instagram"
-                aria-label="Instagram"
-                href="https://www.instagram.com/"
-              >
-                <div class="filled"></div>
-                <svg
-                  xml:space="preserve"
-                  viewBox="0 0 16 16"
-                  class="bi bi-instagram"
-                  fill="currentColor"
-                  height="16"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                  ></path>
-                </svg>
-              </a>
-              <div class="tooltip">Instagram</div>
-            </li>
-            <li class="icon-content">
-              <a
-                data-social="youtube"
-                aria-label="Youtube"
-                href="https://youtube.com/"
-              >
-                <div class="filled"></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="bi bi-youtube"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                >
-                  <path
-                    fill="#fff"
-                    d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
-                  />
-                  <path
-                    fill="#fff"
-                    d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
-                  />
-                  <path
-                    fill="#cfd8dc"
-                    d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
-                  />
-                  <path
-                    fill="#40c351"
-                    d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
-                  />
-                  <path
-                    fill="#fff"
-                    fill-rule="evenodd"
-                    d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </a>
-              <div class="tooltip">Youtube</div>
-            </li>
-          </ul>
-        </div>
         <div class="container position-relative">
           <div class="top_nav d-flex justify-content-between">
             <div class="d-flex align-items-center">
@@ -167,8 +50,7 @@
             </div>
             <div>
               <a href="https://github.com/Razinahmed09">
-              <button class="btn"><i class="bi bi-github"></i> Github
-              </button>
+                <button class="btn"><i class="bi bi-github"></i> Github</button>
               </a>
             </div>
           </div>
@@ -211,7 +93,6 @@
         </div>
       </section>
     </header>
-
     <div class="container">
       <div class="d-flex justify-content-center loader-parent">
         <div class="loader">
@@ -233,15 +114,102 @@
         </div>
       </div>
     </div>
+    <!-- sec_1_banner -->
+
+    <!-- social_icons -->
+    <div class="home_social_icons">
+      <!-- /* From Uiverse.io by aadium */  -->
+      <div class="social-buttons">
+        <a
+          href="https://github.com/Razinahmed09"
+          class="social-button github"
+          target="_blank"
+        >
+          <svg
+            class="cf-icon-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="-2.5 0 19 19"
+          >
+            <path
+              d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/razin-ahmed-a365a5255/"
+          class="social-button linkedin"
+          target="_blank"
+        >
+          <svg
+            viewBox="0 -2 44 44"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g id="Icons" stroke="none" stroke-width="1">
+              <g transform="translate(-702.000000, -265.000000)">
+                <path
+                  d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                  id="LinkedIn"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <a
+          href="https://wa.me/+923112560696?"
+          class="social-button facebook"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#ffffff"
+            version="1.1"
+            id="Capa_1"
+            width="800px"
+            height="800px"
+            viewBox="0 0 30.667 30.667"
+            xml:space="preserve"
+            stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017 c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382 c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076 c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427 c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437 c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536 c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609 c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611 c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787 c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739 C23.307,19.268,23.307,18.533,23.214,18.38z"
+                />
+              </g>
+            </g>
+          </svg>
+        </a>
+        <!-- <a href="#" class="social-button instagram">
+          <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1">
+              <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+      
+      </path>
+                  </g>
+              </g>
+          </g>
+      </svg>
+        </a> -->
+      </div>
+    </div>
+    <!-- social_icons -->
 
     <main>
-      <!-- <div class="container-fluid py-3">
-            <div class="bg-moving">
-                <span class="bg-leave"></span>
-                <span class="bg-leave-2"></span>
-            </div>
-        </div> -->
-      <section class="sec2-creative py-5" id="footer">
+        <!-- sec2-creative -->
+      <section class="sec2-creative py-5">
         <div class="container pt-5">
           <div class="top_to_bottom">
             <a href="#footer">Scroll Down <i class="bi bi-arrow-down"></i></a>
@@ -344,6 +312,9 @@
           </div>
         </div>
       </section>
+        <!-- sec2-creative -->
+
+      <!-- dots_animation -->
       <div class="dots_parent">
         <div class="dots_parent_2">
           <div class="wrapper">
@@ -356,7 +327,11 @@
           </div>
         </div>
       </div>
-      <section class="sec2-creative sec3-port py-5" id="footer">
+      <!-- dots_animation -->
+
+
+      <!-- sec3-port -->
+      <section class="sec2-creative sec3-port py-5">
         <div class="container pt-5">
           <div class="top_to_bottom">
             <a href="#footer">Scroll Down <i class="bi bi-arrow-down"></i></a>
@@ -389,15 +364,52 @@
               </div>
             </div>
           </div>
-          <div class="row py-5 align-items-end">
-            <div class="col-xxl-6">
-              <div class="port_intro">
-                <h2 class="text-white">IM A FRONTEND DEVELOPER</h2>
-                <p class="text-white pt-4">
-                  I'm expert in Frontend and Web Application development good in
-                  optimization performane Bugfixing and problem solving.
-                </p>
+          <div class="row">
+            <div class="port_intro pt-3">
+              <h2 class="text-white">IM A FRONTEND DEVELOPER</h2>
+              <p class="text-white pt-4 w-50">
+                I'm expert in Frontend and Web Application development good in
+                optimization performane bugfixing and problem solving.
+              </p>
+              <div>
+                <ul class="my_intro pt-4 w-75">
+                  <li>
+                    Developed and maintained responsive web applications using
+                    HTML, CSS, and JavaScript.
+                  </li>
+                  <li>
+                    Collaborated with designers and backend developers to create
+                    seamless, high-performance web solutions.
+                  </li>
+                  <li>
+                    Becoming a successful frontend developer at a software house
+                    involves a well-defined journey that combines formal
+                    education, practical experience, and continuous learning.
+                  </li>
+                </ul>
+                <div class="d-flex py-3">
+                  <div>
+                    <a href="./pdf/razinResume(update).pdf" target="_blank">
+                      <button class="btn un_width">
+                        <i class="bi bi-file-earmark-pdf-fill"></i> Resume
+                      </button>
+                    </a>
+                  </div>
+                  <div>
+                    <div>
+                      <a href="https://wa.me/+923112560696?" target="_blank">
+                        <button class="btn un_width">
+                          <i class="bi bi-whatsapp"></i> Whatsapp
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="row py-5 align-items-center">
+            <div class="col-xxl-6">
               <div class="pt-5">
                 <div class="skills-section">
                   <h2>Skills</h2>
@@ -469,6 +481,14 @@
                           width="40px"
                           height="40px"
                         />Tailwind CSS
+                      </div>
+                      <div class="skill-item css_icon">
+                        <img
+                          src="./img/aos_icon.png"
+                          alt="css.png"
+                          width="40px"
+                          height="40px"
+                        />AOS
                       </div>
                       <!-- <div class="skill-item">Vue</div> -->
                     </div>
@@ -553,6 +573,7 @@
                           height="40px"
                         />Tailwind CSS
                       </div>
+
                       <!-- <div class="skill-item">Vue</div> -->
                     </div>
                   </div>
@@ -584,10 +605,220 @@
           </div>
         </div>
       </section>
+      <!-- sec3-port -->
+
+
+      <!-- sec4-our_work -->
+       <section class="sec4_ourwork">
+        <div class="container">
+          <h2>Check Our Work</h2>
+        </div>
+        <main class="main">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nutriscs_home.webp" data-fancybox="gallery" data-caption="https://nutriscs.com/">
+                  <img src="./img/nutriscs_home.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nutriscs.com_about-us.webp" data-fancybox="gallery" data-caption="https://nutriscs.com/about-us">
+                  <img src="./img/nutriscs.com_about-us.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nutriscs.com_product.webp" data-fancybox="gallery" data-caption="https://nutriscs.com/product">
+                  <img src="./img/nutriscs.com_product.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nutriscs.com_contact-us.webp" data-fancybox="gallery" data-caption="https://nutriscs.com/contact-us">
+                  <img src="./img/nutriscs.com_contact-us.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/grantwritingavenue.com_.webp" data-fancybox="gallery" data-caption="https://grantwritingavenue.com/">
+                  <img src="./img/grantwritingavenue.com_.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/grantwritingavenue.com_we-do-it.webp" data-fancybox="gallery" data-caption="https://grantwritingavenue.com/we-do-it">
+                  <img src="./img/grantwritingavenue.com_we-do-it.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/grantwritingavenue.com_our-work.webp" data-fancybox="gallery" data-caption="https://grantwritingavenue.com/our-work">
+                  <img src="./img/grantwritingavenue.com_our-work.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/grantwritingavenue.com_our-pricing.webp" data-fancybox="gallery" data-caption="https://grantwritingavenue.com/our-pricing">
+                  <img src="./img/grantwritingavenue.com_our-pricing.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/assignmentwritingservices..webp" data-fancybox="gallery" data-caption="https://assignmentwritingservices.ae/">
+                  <img src="./img/assignmentwritingservices..webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/assignmentwritingservices.ae_about-us.webp" data-fancybox="gallery" data-caption="https://assignmentwritingservices.ae/about-us">
+                  <img src="./img/assignmentwritingservices.ae_about-us.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/assignmentwritingservices.ae_pricing.webp" data-fancybox="gallery" data-caption="https://assignmentwritingservices.ae/pricing">
+                  <img src="./img/assignmentwritingservices.ae_pricing.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/assignmentwritingservices.ae_reviews.webp" data-fancybox="gallery" data-caption="https://assignmentwritingservices.ae/reviews">
+                  <img src="./img/assignmentwritingservices.ae_reviews.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/assignmentwritingservices.ae_contact.webp" data-fancybox="gallery" data-caption="https://assignmentwritingservices.ae/contact">
+                  <img src="./img/assignmentwritingservices.ae_contact.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/probrandingsolutions.com_logo-design.webp" data-fancybox="gallery" data-caption="https://probrandingsolutions.com/logo-design">
+                  <img src="./img/probrandingsolutions.com_logo-design.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nobleacademicwriters.uk.webp" data-fancybox="gallery" data-caption="https://nobleacademicwriters.uk/">
+                  <img src="./img/nobleacademicwriters.uk.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nobleacademicwriters.uk_about-us.webp" data-fancybox="gallery" data-caption="https://nobleacademicwriters.uk/about-us">
+                  <img src="./img/nobleacademicwriters.uk_about-us.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nobleacademicwriters.uk_assignment.webp" data-fancybox="gallery" data-caption="https://nobleacademicwriters.uk/assignment">
+                  <img src="./img/nobleacademicwriters.uk_assignment.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nobleacademicwriters.uk_essay.webp" data-fancybox="gallery" data-caption="https://nobleacademicwriters.uk/essay">
+                  <img src="./img/nobleacademicwriters.uk_essay.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nobleacademicwriters.uk_reviews.webp" data-fancybox="gallery" data-caption="https://nobleacademicwriters.uk/reviews">
+                  <img src="./img/nobleacademicwriters.uk_reviews.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nobleacademicwriters.uk_contact-us.webp" data-fancybox="gallery" data-caption="https://nobleacademicwriters.uk/contact-us">
+                  <img src="./img/nobleacademicwriters.uk_contact-us.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+            <div class="card">
+              <div class="card-image">
+                <a href="./img/nobleacademicwriters.uk_course-work.webp" data-fancybox="gallery" data-caption="https://nobleacademicwriters.uk/course-work">
+                  <img src="./img/nobleacademicwriters.uk_course-work.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </main>
+       </section>
+      <!-- sec4-our_work -->
+
     </main>
-    <footer>
+    <footer id="footer">
       <!-- place footer here -->
     </footer>
+    <script src="./js/fancybox.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

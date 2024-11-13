@@ -164,106 +164,16 @@ body::-webkit-scrollbar-thumb {
 
 /* home social icons */
 
-.home_social_icons {
-    position: absolute;
-    top: 260px;
-    left: 30px;
-}
+
 
 ul {
     list-style: none;
   }
   
-  .example-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-  }
-  .example-2 .icon-content {
-    margin: 0 10px;
-    position: relative;
-  }
-  .example-2 .icon-content .tooltip {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(50%);
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 15px;
-    opacity: 0;
-    visibility: hidden;
-    font-size: 14px;
-    transition: all 0.3s ease;
-  }
-  .example-2 .icon-content:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: 6px;
-  }
-  .example-2 .icon-content a {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    color: #4d4d4d;
-    background-color: #ffff;
-    transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
-  }
-  .example-2 .icon-content a svg {
-    position: relative;
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-  }
-  .example-2 .icon-content a:hover {
-    color: white !important;
-  }
- 
-  .example-2 .icon-content a .filled {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover .filled {
-    height: 100%;
-  }
-  .example-2 .icon-content a[data-social="spotify"] .filled,
-  .example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
-    background-color: #239afc;
-  }
-  .example-2 .icon-content a[data-social="pinterest"] .filled,
-  .example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
-    background-color: #bd081c;
-  }
-  .example-2 .icon-content a[data-social="dribbble"] .filled,
-  .example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
-    background-color: #ea4c89;
-  }
-  .example-2 .icon-content a[data-social="telegram"] .filled,
-  .example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
-    background-color: #0088cc;
-  }
-  
 
-/* home social icons */
 
 /* From Uiverse.io by CristianMontoya98 */ 
-.top_nav .btn {
+.sec1-banner .btn, .sec3-port .btn {
   width: 6.5em;
   height: 2.3em;
   margin: 0.5em;
@@ -279,11 +189,11 @@ ul {
   overflow: hidden;
  }
  
- .top_nav button:hover {
-  color: black;
+ .sec1-banner button:hover, .sec3-port button:hover {
+  color: black !important;
  }
  
- .top_nav button:after {
+ .sec1-banner button:after , .sec3-port button:after {
   content: "";
   background: white;
   position: absolute;
@@ -296,10 +206,14 @@ ul {
   transition: all 0.5s;
  }
  
- .top_nav button:hover:after {
+ .sec1-banner button:hover:after, .sec3-port button:hover:after {
   transform: skewX(-45deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+ }
+
+  .un_width {
+  width: 200px !important;
  }
 
 .sec1-banner .row {
@@ -666,13 +580,31 @@ ul {
   overflow: hidden;
   width: 90%;
 }
-.port_disrip img {
-  height: 540px;
-    /* width: 522px; */
-    margin-bottom: 30px;
-    margin-left: -28px;
+
+.sec3-port .port_disrip {
+  border-radius: 27% 73% 58% 42% / 34% 45% 55% 66%;
+  background: linear-gradient(90deg, rgba(233, 30, 99, 1) 33%, rgba(224, 0, 76, 1) 88%, rgba(184, 0, 63, 1) 100%);
+  padding: 3rem;
+  height: 425px;
+  overflow: hidden;
+  width: 75%;
 }
 
+.sec3-port  .port_disrip img {
+    height: 560px;
+    width: 560px;
+    margin-bottom: 30px;
+    margin-left: -94px;
+    position: relative;
+    top: -180px;
+
+}
+
+.my_intro li {
+  list-style: disc;
+  margin-left: 20px;
+  color: white;
+}
 .nav_brand li a {
   color: white;
   font-size: 22px;
@@ -1158,101 +1090,205 @@ ul {
 }
 
 
-/* From Uiverse.io by Zameerahmad01 */ 
-ul {
-  list-style: none;
+/* From Uiverse.io by aadium */ 
+
+.home_social_icons {
+  position: fixed;
+  left: 15px;
+  bottom: 20px;
+  width: 10%;
+  z-index: 20;
 }
 
-.example-2 {
+.social-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  row-gap: 0.5rem;
+  background-color: black;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 7px 0px;
+  border-radius: 5em;
 }
-.example-2 .icon-content {
-  margin: 0 10px;
-  position: relative;
-}
-.example-2 .icon-content .tooltip {
-  position: absolute;
-  top: 20px;
-  left: 40%;
-  transform: translateX(50%);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 5px;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-.example-2 .icon-content:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  top: 5px;
-}
-.example-2 .icon-content a {
-  position: relative;
-  overflow: hidden;
+
+.social-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  color: #4d4d4d;
+  margin: 0 10px;
   background-color: #fff;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
 }
-.example-2 .icon-content a:hover {
-  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
 }
-.example-2 .icon-content a svg {
-  position: relative;
-  z-index: 1;
-  width: 30px;
-  height: 30px;
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
 }
-.example-2 .icon-content a:hover {
+
+.facebook {
+  background-color: #44ad3a;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #129e19;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+/* .instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+} */
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+
+
+/* .sec4_ourwork  */
+
+.sec4_ourwork {
+  background-color: #111;
+  height: auto;
+  /* padding: 2rem 0; */
+}
+
+.sec4_ourwork h2 {
+  font-family: 'ITC-Garde-Bold';
+  font-size: 60px;
   color: white;
+  text-align: center;
+  padding: 2rem 0;
 }
-.example-2 .icon-content a .filled {
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 0;
+
+.sec4_ourwork .container-fluid {
+  padding: 7rem 7rem;
+  margin: 0;
+  background: #df004b;
+}
+
+.sec4_ourwork .main {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec4_ourwork .card {
+    background: white;
+    /* box-shadow: $box-shadow; */
+    color: black;
+    border-radius: 2px;
+
+    &-image {
+      background: white;
+      display: block;
+      padding-top: 70%;
+      position: relative;
+      width: 20%;
+
+      img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.sec4_ourwork .card {
+  border: none !important;
+  filter: brightness(0.5);
+}
+.sec4_ourwork .card:hover{
+  transition: all .4s ease-in-out;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 5;
+  border: none !important;
+  filter: brightness(1);
+
+}
+.card-image img {
   width: 100%;
-  height: 0;
-  background-color: #000;
-  transition: all 0.3s ease-in-out;
-}
-.example-2 .icon-content a:hover .filled {
-  height: 100%;
+  transition: all .4s ease-in-out;
+  transform: scale(1);
+  
 }
 
-.example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
-  background-color: #0274b3;
+.card-image {
+  overflow: hidden;
+  height: 300px;
+
 }
 
-.example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
-  background-color: #24262a;
+/* .card-image img:hover {
+  transform: scale(1.1);
+  position: relative;
+  z-index: 4;
+} */
+.sec4_ourwork .col-2 {
+  padding: 0;
 }
-.example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5b51db,
-    #b33ab4,
-    #c135b4,
-    #e1306c,
-    #fd1f1f
-  );
+@media only screen and (max-width: 600px) {
+  .sec4_ourwork .main {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
 }
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-  background-color: #ff0000;
-}
+
+
+/* .sec4_ourwork  */
+
+
+
+
+

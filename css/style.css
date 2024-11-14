@@ -97,6 +97,34 @@ p {
   font-family: Montserrat-Regural;
 }
 
+/* stylish cursor */
+
+.rounded {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 100% !important;
+  /* transition: all ease-in-out 0.3s; */
+  /* box-shadow: rgba(255, 0, 0, 0.25) 0px 54px 55px, rgba(255, 0, 0, 0.12) 0px -12px 30px, rgba(247, 14, 14, 0.12) 0px 4px 6px, rgba(255, 174, 0, 0.17) 0px 12px 13px, rgba(173, 3, 3, 0.09) 0px -3px 5px; */
+  z-index: 100;
+  position:fixed;
+}
+
+
+.pointed {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 100% !important;
+  margin-bottom: 20rem;
+  transition: transform 0.1s ease;
+}
+
+
+/* stylish cursor */
+
+
 a {
   text-decoration: none;
 }
@@ -155,7 +183,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec1-banner {
-    background-image: url("/img/banner.jpg");
+    background-image: url("/img/banner-modified_11zon.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,13 +214,19 @@ ul {
   cursor: pointer;
   position: relative;
   z-index: 1;
+  animation: pulse 1.7s infinite;
   overflow: hidden;
  }
- 
+ .lottie_header {
+  bottom: -50px;
+  left: -70px;
+ }
  .sec1-banner button:hover, .sec3-port button:hover {
   color: black !important;
  }
  
+
+
  .sec1-banner button:after , .sec3-port button:after {
   content: "";
   background: white;
@@ -220,10 +254,11 @@ ul {
     padding: 10rem 0;
 }
 .hero-sec {
-    -webkit-backdrop-filter: blur(15px);
-    background: #00000075;
-    height: 86vh;
-    backdrop-filter: blur(15px);
+  background: #00000075;
+  height: 86vh;
+  backdrop-filter: blur(15px);
+  -mox-backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Safari */
 }
 
 .top_nav {
@@ -263,6 +298,10 @@ ul {
         text-transform: uppercase;
 }
 
+.info_lottie {
+  position: absolute;
+  right: 20px;
+}
 
 .top_to_bottom a {
   display: block;
@@ -293,7 +332,7 @@ ul {
 .profile-section {
     width: 300px;
     height: 600px;
-    background-image: url("/img/mobile-bg.jpg");
+    background-image: url("/img/mobile-bg.webp");
     position: relative;
     background-color: #111;
     padding: 20px;
@@ -588,6 +627,20 @@ ul {
   height: 425px;
   overflow: hidden;
   width: 75%;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateY(0);
+}
+
+30% {
+    transform: translateY(50px);
+}
+100% {
+    transform: translateY(0);
+}
 }
 
 .sec3-port  .port_disrip img {
@@ -729,6 +782,7 @@ ul {
   font-size: 60px;
   margin-bottom: 20px;
   color: #fff;
+  font-family: Montserrat-Medium;
 }
 
 .skills-category {
@@ -1187,6 +1241,13 @@ ul {
 
 /* .sec4_ourwork  */
 
+
+.middle_lottie {
+  position: absolute;
+  left: -300px;
+  bottom: -422px;
+}
+
 .sec4_ourwork {
   background-color: #111;
   height: auto;
@@ -1201,10 +1262,13 @@ ul {
   padding: 2rem 0;
 }
 
-.sec4_ourwork .container-fluid {
+.sec4_ourwork main {
   padding: 7rem 7rem;
   margin: 0;
-  background: #df004b;
+  background: linear-gradient(90deg, rgba(233, 30, 99, 1) 33%, rgba(224, 0, 76, 1) 88%, rgba(184, 0, 63, 1) 100%);
+}
+.sec4_ourwork main .container-fluid {
+ 
 }
 
 .sec4_ourwork .main {
@@ -1288,7 +1352,28 @@ ul {
 
 /* .sec4_ourwork  */
 
+/* sec5_contactUs */
 
+.sec5_contactUs {
+  background-color: #111;
+  padding: 0rem 7rem;
+}
+
+.child_contact {
+  background: linear-gradient(90deg, rgba(233, 30, 99, 1) 33%, rgba(224, 0, 76, 1) 88%, rgba(184, 0, 63, 1) 100%);
+  height: 50vh;
+}
+
+.sec5_contactUs h2 {
+  font-family: 'ITC-Garde-Bold';
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    /* padding: 2rem 0; */
+    padding: 2rem 0;
+}
+
+/* sec5_contactUs */
 
 
 

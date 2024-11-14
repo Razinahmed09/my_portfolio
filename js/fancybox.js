@@ -11,3 +11,6 @@ $('[data-fancybox="gallery"]').fancybox({
   loop: false,
   protect: true
 });
+
+
+

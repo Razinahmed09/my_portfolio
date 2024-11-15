@@ -1254,6 +1254,11 @@ ul {
   /* padding: 2rem 0; */
 }
 
+.fluid_parent {
+  background-color: #111;
+  padding: 2rem;
+}
+
 .sec4_ourwork h2 {
   font-family: 'ITC-Garde-Bold';
   font-size: 60px;
@@ -1261,15 +1266,19 @@ ul {
   text-align: center;
   padding: 2rem 0;
 }
-
+.port_lottie {
+  position: absolute;
+  right: 0px;
+  top: -342px;
+}
 .sec4_ourwork main {
   padding: 7rem 7rem;
   margin: 0;
   background: linear-gradient(90deg, rgba(233, 30, 99, 1) 33%, rgba(224, 0, 76, 1) 88%, rgba(184, 0, 63, 1) 100%);
 }
-.sec4_ourwork main .container-fluid {
+/* .sec4_ourwork main .container-fluid {
  
-}
+} */
 
 .sec4_ourwork .main {
   .container {
@@ -1361,19 +1370,374 @@ ul {
 
 .child_contact {
   background: linear-gradient(90deg, rgba(233, 30, 99, 1) 33%, rgba(224, 0, 76, 1) 88%, rgba(184, 0, 63, 1) 100%);
-  height: 50vh;
+  height: auto;
+  padding: 5rem;
 }
 
 .sec5_contactUs h2 {
   font-family: 'ITC-Garde-Bold';
-    font-size: 60px;
-    color: white;
-    text-align: center;
-    /* padding: 2rem 0; */
-    padding: 2rem 0;
+  font-size: 60px;
+  background: -webkit-linear-gradient(#ffd3d3 ,rgb(255 0 87) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 2rem 0;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 2;
 }
+
+/* .contact_form form {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+} */
+/* From Uiverse.io by JkHuger */ 
+.sec5_contactUs .singup {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+  font-family: 'ITC-Garde-Bold';
+}
+
+.sec5_contactUs .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 70%;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #fff;
+  /* box-shadow: 0px 16px 32px #c8c8c8, -16px -16px 32px #fefefe; */
+  border-radius: 8px;
+  border: 4px solid black;
+}
+
+.sec5_contactUs .inputBox,
+.sec5_contactUs .inputBox1 {
+  position: relative;
+  width: 90%
+}
+
+.sec5_contactUs .inputBox input,
+.sec5_contactUs .inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.sec5_contactUs .inputBox span, .sec5_contactUs .inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 174px;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.sec5_contactUs .inputBox input:valid~span,
+.sec5_contactUs .inputBox input:focus~span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #bc0040;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.sec5_contactUs .inputBox1 input:valid~span,
+.sec5_contactUs .inputBox1 input:focus~span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #bc0040;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.sec5_contactUs .inputBox input:valid,
+.sec5_contactUs .inputBox input:focus,
+.sec5_contactUs .inputBox1 input:valid,
+.sec5_contactUs .inputBox1 input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.sec5_contactUs .enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+  font-family: 'ITC-Garde-Bold';
+}
+
+.sec5_contactUs .enter:hover {
+  background: #bc0040;
+  color: white;
+}
+
+.connect_us {
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.contact_form {
+  position: relative;
+  z-index: 10;
+}
+.connect_us .call {
+  background-color: #000;
+  width: 405px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  display: block;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  margin: 15px 0;
+  transition: all .3s ease-in-out;
+  animation: pulse1 1.7s infinite;
+}
+
+@keyframes pulse1 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 #000000;
+}
+
+100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+}
+}
+
+.connect_us .call:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+.call i {
+  padding: 12px 16px;
+  background-color: #bc0040;
+  border-radius: 50%;
+
+}
+.whatsapp i {
+  background-color: #0bc105;
+}
+.mailto i {
+  background-color: #1db1f9;
+}
+
+.contact_lottie {
+  bottom: -103px;
+  left: -24px;
+}
+
+.contact_lottie2 {
+  right: 0;
+  top: -208px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -166px;
+}
+
 
 /* sec5_contactUs */
 
 
 
+/* footer */
+
+footer{
+  background-color: #111;
+  height: 20vh;
+}
+
+/* footer */
+
+
+
+/* From Uiverse.io by ZacharyCrespin */ 
+@keyframes square-animation {
+  0% {
+   left: 0;
+   top: 0;
+  }
+ 
+  10.5% {
+   left: 0;
+   top: 0;
+  }
+ 
+  12.5% {
+   left: 32px;
+   top: 0;
+  }
+ 
+  23% {
+   left: 32px;
+   top: 0;
+  }
+ 
+  25% {
+   left: 64px;
+   top: 0;
+  }
+ 
+  35.5% {
+   left: 64px;
+   top: 0;
+  }
+ 
+  37.5% {
+   left: 64px;
+   top: 32px;
+  }
+ 
+  48% {
+   left: 64px;
+   top: 32px;
+  }
+ 
+  50% {
+   left: 32px;
+   top: 32px;
+  }
+ 
+  60.5% {
+   left: 32px;
+   top: 32px;
+  }
+ 
+  62.5% {
+   left: 32px;
+   top: 64px;
+  }
+ 
+  73% {
+   left: 32px;
+   top: 64px;
+  }
+ 
+  75% {
+   left: 0;
+   top: 64px;
+  }
+ 
+  85.5% {
+   left: 0;
+   top: 64px;
+  }
+ 
+  87.5% {
+   left: 0;
+   top: 32px;
+  }
+ 
+  98% {
+   left: 0;
+   top: 32px;
+  }
+ 
+  100% {
+   left: 0;
+   top: 0;
+  }
+ }
+ 
+ footer .loader {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  transform: rotate(45deg);
+ }
+ 
+ footer .loader-square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  margin: 2px;
+  border-radius: 0px;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: square-animation 10s ease-in-out infinite both;
+ }
+ 
+ footer .loader-square:nth-of-type(0) {
+  animation-delay: 0s;
+ }
+ 
+ footer .loader-square:nth-of-type(1) {
+  animation-delay: -1.4285714286s;
+ }
+ 
+ footer .loader-square:nth-of-type(2) {
+  animation-delay: -2.8571428571s;
+ }
+ 
+ footer .loader-square:nth-of-type(3) {
+  animation-delay: -4.2857142857s;
+ }
+ 
+ footer .loader-square:nth-of-type(4) {
+  animation-delay: -5.7142857143s;
+ }
+ 
+ footer .loader-square:nth-of-type(5) {
+  animation-delay: -7.1428571429s;
+ }
+ 
+ footer .loader-square:nth-of-type(6) {
+  animation-delay: -8.5714285714s;
+ }
+ 
+ footer .loader-square:nth-of-type(7) {
+  animation-delay: -10s;
+ }
+
+ footer .loader_parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.3rem;
+ }

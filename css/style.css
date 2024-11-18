@@ -1162,6 +1162,7 @@ ul {
   box-shadow: 0px 0px 15px #00000027;
   padding: 7px 0px;
   border-radius: 5em;
+  width: 185px;
 }
 
 .social-button {
@@ -1395,26 +1396,27 @@ ul {
 } */
 /* From Uiverse.io by JkHuger */ 
 .sec5_contactUs .singup {
-  color: #000;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: block;
   font-weight: bold;
   font-size: x-large;
-  margin-top: 1.5em;
+  /* margin-top: 1.5em; */
   font-family: 'ITC-Garde-Bold';
 }
 
 .sec5_contactUs .card {
   display: flex;
   justify-content: center;
+  padding: 1rem;
   align-items: center;
   min-height: 350px;
   width: 70%;
   flex-direction: column;
   gap: 35px;
   border-radius: 15px;
-  background: #fff;
+  background: #000000;
   /* box-shadow: 0px 16px 32px #c8c8c8, -16px -16px 32px #fefefe; */
   border-radius: 8px;
   border: 4px solid black;
@@ -1432,11 +1434,11 @@ ul {
   padding: 10px;
   outline: none;
   border: none;
-  color: #000;
+  color: #ffffff;
   font-size: 1em;
-  background: transparent;
-  border-left: 2px solid #000;
-  border-bottom: 2px solid #000;
+  background: #ffffff26;
+  border-left: 2px solid #bf0041;
+  border-bottom: 2px solid #bc0041;
   transition: 0.1s;
   border-bottom-left-radius: 8px;
 }
@@ -1444,13 +1446,13 @@ ul {
 .sec5_contactUs .inputBox span, .sec5_contactUs .inputBox1 span {
   margin-top: 5px;
   position: absolute;
-  left: 174px;
+  left: 160px;
   transform: translateY(-4px);
   margin-left: 10px;
   padding: 10px;
   pointer-events: none;
   font-size: 12px;
-  color: #000;
+  color: #ffffff;
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 3px;
@@ -1493,18 +1495,19 @@ ul {
   border-radius: 5px;
   border: 2px solid #000;
   cursor: pointer;
-  background-color: transparent;
+  background: #bc0040;;
   transition: 0.5s;
   text-transform: uppercase;
-  font-size: 10px;
+  color: #FFF;
+  font-size: 11px;
   letter-spacing: 2px;
   margin-bottom: 3em;
   font-family: 'ITC-Garde-Bold';
 }
 
 .sec5_contactUs .enter:hover {
-  background: #bc0040;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .connect_us {
@@ -1578,6 +1581,46 @@ ul {
   top: -166px;
 }
 
+
+/* From Uiverse.io by mi-series */ 
+.contact_form .btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #bb0040;
+  min-width: 188px;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+.contact_form .btn:hover {
+  opacity: .95;
+}
+
+.contact_form .btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
 
 /* sec5_contactUs */
 
@@ -1740,4 +1783,303 @@ footer{
   display: flex;
   justify-content: center;
   margin-top: 3.3rem;
+ }
+
+ .un_padding {
+  padding-bottom: 5rem;
+ }
+
+ @media screen and (min-width:1400px) and (max-width:1600px) {
+  .port_disrip {
+    height: 470px;
+  }
+  .top_to_bottom a{
+    font-size: 20px;
+  }
+  .sec2-creative .top_to_bottom a {
+    bottom: 100px;
+    right: -28px;
+}
+.top_to_bottom a i {
+  right: 0px;
+  top: 10px;
+  left: 150px;
+}
+.port_disrip {
+  margin-left: 3rem;
+}
+.mb_intro {
+  display: flex;
+  justify-content: center;
+}
+.sec5_contactUs .card {
+  width: 100%;
+}
+.top_nav {
+  padding: 1rem 1rem;
+}
+.sec2-creative {
+  margin: 6rem 6rem;
+}
+.page_no h3 {
+  font-size: 110px;
+}
+.intro h2 {
+  font-size: 48px;
+}
+.intro h1 {
+  font-size: 90px;
+}
+.contact_lottie2 {
+  right: 0px;
+  top: -148px;
+}
+.lottie_header {
+  width: 295px;
+}
+ }
+
+
+ @media screen and (min-width:1200px) and (max-width:1399px) {
+  .port_disrip {
+    height: 370px;
+}
+  .top_to_bottom a{
+    font-size: 20px;
+  }
+  .sec2-creative .top_to_bottom a {
+    bottom: 100px;
+    right: -28px;
+}
+.top_to_bottom a i {
+  right: 0px;
+  top: 10px;
+  left: 150px;
+}
+.port_disrip {
+  margin-left: 3rem;
+}
+.mb_intro {
+  display: flex;
+  justify-content: center;
+}
+.sec5_contactUs .card {
+  width: 100%;
+}
+.top_nav {
+  padding: 1rem 1rem;
+}
+.sec2-creative {
+  margin: 6rem 6rem;
+}
+.page_no h3 {
+  font-size: 110px;
+}
+.intro h2 {
+  font-size: 37px;
+}
+.intro h4 {
+  font-size: 34px;
+}
+.intro h1 {
+  font-size: 75px;
+}
+.contact_lottie2 {
+  right: 0px;
+  top: -148px;
+}
+.lottie_header {
+  width: 295px;
+}
+.sec2_intro_parent {
+  display: flex;
+  justify-content: center;
+}
+.sec3-port .port_disrip {
+  width: 420px;
+}
+.sec3-port .port_disrip img {
+  margin-left: -110px;
+}
+.connect_us .call {
+  width: 280px;
+}
+.port_lottie {
+  right: -120px;
+}
+ }
+
+ @media screen and (min-width:1200px) and (max-width:1250px) {
+  .sec5_contactUs .inputBox span, .sec5_contactUs .inputBox1 span {
+    left: 145px;
+  }
+ }
+
+
+ @media screen and (min-width:992px) and (max-width:1199px) {
+  .port_disrip {
+    height: 370px;
+}
+  .top_to_bottom a{
+    font-size: 20px;
+  }
+  .sec2-creative .top_to_bottom a {
+    bottom: 100px;
+    right: -28px;
+}
+.top_to_bottom a i {
+  right: 0px;
+  top: 10px;
+  left: 150px;
+}
+.port_disrip {
+  margin-left: 3rem;
+}
+.mb_intro {
+  display: flex;
+  justify-content: center;
+}
+.sec5_contactUs .card {
+  width: 100%;
+}
+.top_nav {
+  padding: 1rem 1rem;
+}
+.sec2-creative {
+  margin: 6rem 5rem;
+}
+.sec4_ourwork main {
+  padding: 5rem 5rem;
+}
+.page_no h3 {
+  font-size: 110px;
+}
+.intro h2 {
+  font-size: 37px;
+}
+.intro h4 {
+  font-size: 34px;
+}
+.intro h1 {
+  font-size: 75px;
+}
+.contact_lottie2 {
+  right: 0px;
+  top: -148px;
+}
+.lottie_header {
+  width: 295px;
+}
+.sec2_intro_parent {
+  display: flex;
+  justify-content: center;
+}
+.sec3-port .port_disrip {
+  width: 85%;
+}
+.sec3-port .port_disrip img {
+  margin-left: -155px;
+}
+.connect_us .call {
+  width: 280px;
+}
+.port_lottie {
+  right: -100px;
+}
+.child_contact {
+  padding: 3rem;
+}
+.connect_us .call {
+  width: 230px;
+}
+.sec5_contactUs {
+  padding: 0rem 5rem;
+}
+ }
+
+ @media screen and (min-width:992px) and (max-width:1050px) {
+  .sec5_contactUs .inputBox span, .sec5_contactUs .inputBox1 span {
+    left: 145px;
+  }
+ }
+
+ @media screen and (min-width:768px) and (max-width:991px) {
+  .port_disrip {
+    height: 370px;
+}
+  .top_to_bottom a{
+    font-size: 20px;
+  }
+  .sec2-creative .top_to_bottom a {
+    bottom: 100px;
+    right: -28px;
+}
+.top_to_bottom a i {
+  right: 0px;
+  top: 10px;
+  left: 150px;
+}
+.port_disrip {
+  margin-left: 3rem;
+}
+.mb_intro {
+  display: flex;
+  justify-content: center;
+}
+.sec5_contactUs .card {
+  width: 100%;
+}
+.top_nav {
+  padding: 1rem 1rem;
+}
+.sec2-creative {
+  margin: 6rem 5rem;
+}
+.sec4_ourwork main {
+  padding: 5rem 5rem;
+}
+.page_no h3 {
+  font-size: 110px;
+}
+.intro h2 {
+  font-size: 37px;
+}
+.intro h4 {
+  font-size: 34px;
+}
+.intro h1 {
+  font-size: 75px;
+}
+.contact_lottie2 {
+  right: 0px;
+  top: -148px;
+}
+.lottie_header {
+  width: 295px;
+}
+.sec2_intro_parent {
+  display: flex;
+  justify-content: center;
+}
+.sec3-port .port_disrip {
+  width: 85%;
+}
+.sec3-port .port_disrip img {
+  margin-left: -155px;
+}
+.connect_us .call {
+  width: 280px;
+}
+.port_lottie {
+  right: -100px;
+}
+.child_contact {
+  padding: 3rem;
+}
+.connect_us .call {
+  width: 230px;
+}
+.sec5_contactUs {
+  padding: 0rem 5rem;
+}
  }

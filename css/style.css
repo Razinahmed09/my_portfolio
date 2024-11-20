@@ -1287,6 +1287,12 @@ ul {
   justify-content: center;
 }
 
+.uncard_parent a {
+  border: 3px solid #bd0040;
+  border-radius: 10px;
+  background: #bc0040 !important;
+}
+
 .sec4_ourwork  .tab-content {
   padding-top: 3rem;
 }
@@ -1317,6 +1323,7 @@ ul {
   padding: 1rem;
   position: relative;
   z-index: 2;
+  height: 214px;
 }
 .sec4_ourwork  .card .tags span {
   background-color: rgba(184, 0, 63, 1);
@@ -1330,8 +1337,11 @@ ul {
   transition: all .4s
    ease-in-out;
 }
+.card-title {
+  font-family: 'ITC-GardePro-Bold';
+}
 .card_img img{
-  max-height: 260px;
+  height: 260px;
   z-index: 1;
 }
 .sec4_ourwork  .card img:hover{

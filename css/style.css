@@ -1287,10 +1287,11 @@ ul {
   justify-content: center;
 }
 
-.uncard_parent a {
-  border: 3px solid #bd0040;
-  border-radius: 10px;
+.uncard_parent .anchor_parent {
+  /* border: 3px solid #bd0040; */
+  border-radius: 15px;
   background: #bc0040 !important;
+  margin: 1.2rem 0; 
 }
 
 .sec4_ourwork  .tab-content {
@@ -1309,6 +1310,7 @@ ul {
   border-radius: 12px;
   transition: all .3s ease-in-out;
   overflow: hidden;
+  width: 100% !important;
 }
 
 .sec4_ourwork  .card:hover{
@@ -1319,7 +1321,7 @@ ul {
 }
 .card-body {
   background-color: #343434 !important;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
   padding: 1rem;
   position: relative;
   z-index: 2;
@@ -1885,6 +1887,7 @@ footer .loader_parent {
   .port_disrip {
     height: 470px;
   }
+  
   .top_to_bottom a {
     font-size: 20px;
   }
@@ -1928,6 +1931,21 @@ footer .loader_parent {
   }
   .lottie_header {
     width: 295px;
+  }
+  .sec4_ourwork .card .tags span {
+    font-size: 13px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .sec4_ourwork .card p {
+    font-size: 14px;
+  }
+  .card_img img {
+    height: 232px;
+  }
+  .card-body {
+    height: 232px;
   }
 }
 
@@ -1998,6 +2016,14 @@ footer .loader_parent {
   .port_lottie {
     right: -120px;
   }
+  .sec4_ourwork .card .tags span {
+    font-size: 14px;
+  }
+ 
+  .card-title {
+    font-size: 18px;
+  }
+ 
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1250px) {
@@ -2040,7 +2066,7 @@ footer .loader_parent {
     margin: 6rem 5rem;
   }
   .sec4_ourwork main {
-    padding: 5rem 5rem;
+    padding: 5rem 2rem;
   }
   .page_no h3 {
     font-size: 110px;
@@ -2075,7 +2101,7 @@ footer .loader_parent {
     width: 280px;
   }
   .port_lottie {
-    right: -100px;
+    right: -48px;
   }
   .child_contact {
     padding: 3rem;
@@ -2086,6 +2112,21 @@ footer .loader_parent {
   .sec5_contactUs {
     padding: 0rem 5rem;
   }
+  .sec4_ourwork .card .tags span {
+    font-size: 13px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .sec4_ourwork .card p {
+    font-size: 14px;
+  }
+  .card_img img {
+    height: 232px;
+  }
+  .card-body {
+    height: 232px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1050px) {
@@ -2093,11 +2134,15 @@ footer .loader_parent {
   .sec5_contactUs .inputBox1 span {
     left: 145px;
   }
+  .port_lottie {
+    right: -42px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .sec1-banner .row {
     padding: 4rem 0;
+    align-items: center;
   }
   .nav_brand li a {
     font-size: 16px;
@@ -2198,9 +2243,208 @@ footer .loader_parent {
   }
   .profile-section {
     width: 300px;
-    height: 490px;
+    height: 515px;
   }
   .profile-section .content {
     margin-top: 35px;
   }
+  .sec4_ourwork .card .tags span {
+    font-size: 13px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .sec4_ourwork .card p {
+    font-size: 14px;
+  }
+  .card_img img {
+    height: 232px;
+  }
+  .card-body {
+    height: 232px;
+  }
+  .sec4_ourwork {
+    overflow: hidden;
+  }
+  .middle_lottie {
+    left: -375px;
+  }
+  .sec4_ourwork h2 {
+    position: relative;
+    z-index: 10;
+  }
+  .port_lottie {
+    right: -144px;
+    top: -268px;
+}
+.intro h4 {
+  padding-top: 2rem;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sec1-banner .row {
+    padding: 4rem 0;
+    align-items: center;
+  }
+  .hero-sec .intro {
+    display: grid;
+    place-items: center;
+    padding: 2rem 0;
+  }
+  .hero-sec {
+    height: auto;
+  }
+  .sec1-banner {
+    height: auto;
+  }
+  .nav_brand li a {
+    font-size: 16px;
+  }
+  .top_nav h3 {
+    font-size: 18px;
+  }
+  .port_disrip {
+    height: 370px;
+    width: 90%;
+  }
+  .port_parent {
+    display: flex;
+    justify-content: center;
+  }
+  .top_to_bottom a {
+    font-size: 19px;
+  }
+  .sec1-banner .top_to_bottom a {
+    top: 580px;
+  }
+  .unique_lottie {
+    display: flex;
+    justify-content: center;
+  }
+  .sec2-creative .top_to_bottom a {
+    bottom: 100px;
+    right: -28px;
+  }
+  .top_to_bottom a i {
+    right: 0px;
+    top: 10px;
+    left: 150px;
+  }
+  .mb_intro {
+    display: flex;
+    justify-content: center;
+  }
+  .sec5_contactUs .card {
+    width: 100%;
+  }
+  .top_nav {
+    padding: 1rem 1rem;
+  }
+  .sec2-creative {
+    margin: 4rem 2rem;
+  }
+  .sec3-port {
+    margin: 6rem 2rem;
+  }
+  .dots_parent_2 {
+    top: 22px;
+  }
+  .loader-parent {
+    margin-top: 2rem;
+  }
+  .sec4_ourwork main {
+    padding: 5rem 2rem;
+  }
+  .page_no h3 {
+    font-size: 55px;
+}
+.intro h2 {
+    font-size: 23px;
+}
+.sec1-banner .intro h2  {
+  padding-left: 15px;
+}
+  .intro h4 {
+    font-size: 23px;
+  }
+  .intro h1 {
+    font-size: 55px;
+  }
+  .contact_lottie2 {
+    right: 0px;
+    top: -148px;
+  }
+  .lottie_header {
+      width: 295px;
+      bottom: -106px;
+      left: -55px;
+  }
+  .sec2_intro_parent {
+    display: flex;
+    justify-content: center;
+  }
+  .sec3-port .port_disrip {
+    width: 60%;
+}
+.sec3-port .port_disrip img {
+  margin-left: -132px;
+}
+  .connect_us .call {
+    width: 280px;
+  }
+  .port_lottie {
+    right: -100px;
+  }
+  .child_contact {
+    padding: 3rem;
+  }
+  .un_disrip {
+    display: flex;
+    justify-content: center;
+  }
+  .connect_us .call {
+    width: 230px;
+  }
+  .sec5_contactUs {
+    padding: 0rem 5rem;
+  }
+  .profile-section {
+    width: 300px;
+    height: 515px;
+  }
+  .profile-section .content {
+    margin-top: 35px;
+  }
+  .sec4_ourwork .card .tags span {
+    font-size: 13px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .sec4_ourwork .card p {
+    font-size: 14px;
+  }
+  .card_img img {
+    height: 232px;
+  }
+  .card-body {
+    height: 232px;
+  }
+  .sec4_ourwork {
+    overflow: hidden;
+  }
+  .middle_lottie {
+    left: -375px;
+  }
+  .sec4_ourwork h2 {
+    position: relative;
+    z-index: 10;
+  }
+  .port_lottie {
+    right: -144px;
+    top: -268px;
+}
+.intro h4 {
+  padding-top: 2rem;
+}
 }

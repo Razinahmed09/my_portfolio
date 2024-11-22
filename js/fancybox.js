@@ -1,5 +1,5 @@
 // / Fancybox Config
-$('[data-fancybox="gallery"]').fancybox({
+$('data-fancybox="gallery"').fancybox({
   buttons: [
     "slideShow",
     "thumbs",

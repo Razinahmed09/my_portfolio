@@ -1267,8 +1267,9 @@ ul {
 }
 .port_lottie {
   position: absolute;
-  right: 0px;
-  top: -342px;
+  right: 0;
+  top: -218px;
+  width: 30%;
 }
 .sec4_ourwork main {
   padding: 7rem 7rem;
@@ -2015,6 +2016,7 @@ footer .loader_parent {
   }
   .port_lottie {
     right: -120px;
+    width: 38%;
   }
   .sec4_ourwork .card .tags span {
     font-size: 14px;
@@ -2100,9 +2102,16 @@ footer .loader_parent {
   .connect_us .call {
     width: 280px;
   }
-  .port_lottie {
-    right: -48px;
+  .sec4_ourwork {
+    overflow: hidden;
   }
+  .port_lottie {
+    position: absolute;
+    right: -84px;
+    top: -142px;
+    width: 38%;
+  }
+   
   .child_contact {
     padding: 3rem;
   }
@@ -2127,6 +2136,7 @@ footer .loader_parent {
   .card-body {
     height: 232px;
   }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1050px) {
@@ -2134,9 +2144,9 @@ footer .loader_parent {
   .sec5_contactUs .inputBox1 span {
     left: 145px;
   }
-  .port_lottie {
+  /* .port_lottie {
     right: -42px;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -2274,9 +2284,11 @@ footer .loader_parent {
     z-index: 10;
   }
   .port_lottie {
-    right: -144px;
-    top: -268px;
+    right: -120px;
+    width: 50%;
+    top: -155px;
 }
+
 .intro h4 {
   padding-top: 2rem;
 }
@@ -2384,7 +2396,7 @@ footer .loader_parent {
     justify-content: center;
   }
   .sec3-port .port_disrip {
-    width: 60%;
+    width: 75%;
 }
 .sec3-port .port_disrip img {
   margin-left: -132px;
@@ -2392,11 +2404,8 @@ footer .loader_parent {
   .connect_us .call {
     width: 280px;
   }
-  .port_lottie {
-    right: -100px;
-  }
   .child_contact {
-    padding: 3rem;
+    padding: 1rem;
   }
   .un_disrip {
     display: flex;
@@ -2406,8 +2415,8 @@ footer .loader_parent {
     width: 230px;
   }
   .sec5_contactUs {
-    padding: 0rem 5rem;
-  }
+    padding: 0rem 2rem;
+}
   .profile-section {
     width: 300px;
     height: 515px;
@@ -2441,10 +2450,198 @@ footer .loader_parent {
     z-index: 10;
   }
   .port_lottie {
-    right: -144px;
-    top: -268px;
+    right: -120px;
+    width: 50%;
+    top: -155px;
+}
+.sec4_ourwork h2 {
+  font-size: 46px;
+}
+.middle_lottie {
+  bottom: -333px;
 }
 .intro h4 {
   padding-top: 2rem;
 }
+.sec5_contactUs .inputBox span, .sec5_contactUs .inputBox1 span {
+  left: 50px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  .top_nav h3 {
+    display: none;
+  }
+  .un_width {
+    width: 168px !important;
+    font-size: 18px !important;
+  }
+  .port_intro h2 {
+    font-family: 'ITC-GardePro-Bold';
+  }
+  .sec4_ourwork .nav-tabs .nav-link {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .sec3-port .port_disrip {
+    width: 75%;
+    height: 375px;
+}
+.sec3-port .port_disrip img {
+  margin-left: -154px;
+  margin-top: -33px;
+}
+.middle_lottie {
+  left: -251px;
+  bottom: -248px;
+}
+.sec4_ourwork h2 {
+  font-size: 45px;
+}
+.w-75 {
+  width: 100% !important;
+}
+.port_lottie {
+  right: -168px;
+  width: 72%;
+  top: -155px;
+}
+}
+
+@media screen and (max-width: 476px) {
+  .sec5_contactUs .inputBox span, .sec5_contactUs .inputBox1 span {
+    left: 0px;
+    }
+    .sec5_contactUs .singup {
+      font-size: 20px;
+    }
+    .port_intro .d-flex {
+      display: grid !important;
+      place-items: center;
+    }
+    .skill-item {
+      padding: 4px 7px;
+    }
+    .sec4_ourwork h2 {
+      font-size: 32px;
+  }
+  .top_nav h3 {
+    display: block;
+}
+.nav_brand  {
+  display: none !important;
+}
+.top_nav {
+  align-items: center;
+}
+.sec1-banner .btn, .sec3-port .btn {
+  font-size: 14px;
+}
+.hero-sec a img {
+  width: 55px;
+  height: 100%;
+}
+.profile-section {
+  width: 250px;
+  height: 500px;
+}
+.hero-sec .title, .content h2 {
+  font-size: 26px;
+}
+.sec1-banner .top_to_bottom a {
+  top: 415px;
+  right: -18px;
+}
+.lottie_header {
+  width: 210px;
+}
+.port_disrip {
+  height: 270px;
+}
+.skills-section h2 {
+  font-size: 50px;
+}
+.sec3-port .port_disrip img {
+  height: 440px;
+  width: 466px;
+   margin-top: 18px;
+   margin-left: -145px;
+}
+.card-body {
+  height: auto;
+}
+.intro h2 {
+  font-size: 16px;
+  letter-spacing: 16px;
+}
+.intro h1 {
+  font-size: 42px;
+}
+.intro h4 {
+  font-size: 18px;
+}
+.sec3-port .port_disrip {
+  width: 85%;
+  height: 315px;
+}
+.sec5_contactUs {
+  overflow: hidden;
+}
+.sec5_contactUs h2 {
+  font-size: 42px;
+}
+.fluid_parent {
+  padding: 0rem;
+}
+.contact_lottie2 {
+  right: 12px;
+  top: -68px;
+  /* width: 783px; */
+  transform: scale(2.9);
+}
+.child_contact {
+  padding: 0rem;
+}
+.contact_form {
+  margin: 1rem 0;
+}
+.middle_lottie {
+  left: -240px;
+  bottom: -217px;
+}
+.port_lottie {
+  top: -78px;
+}
+.sec4_ourwork .nav-tabs .nav-link {
+  font-size: 14px;
+}
+.connect_us .call {
+  width: 200px;
+  font-size: 17px;
+}
+.call i {
+  padding: 6px 12px;
+}
+
+.sec4_ourwork main {
+  padding: 3rem 1rem;
+}
+.top_to_bottom a {
+  font-size: 18px;
+}
+.port_intro h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+}
+
+@media screen and (max-width: 367px) {
+  .sec4_ourwork .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 3px; 
+  }
+  .sec1-banner .top_to_bottom a {
+    right: -27px;
+  }
 }

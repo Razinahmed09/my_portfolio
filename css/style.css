@@ -194,7 +194,7 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 86vh;
+  height: auto;
 }
 
 /* home social icons */
@@ -261,14 +261,18 @@ ul {
 }
 
 .sec1-banner .row {
-  padding: 10rem 0;
+  padding: 7rem 0;
 }
 .hero-sec {
   background: #00000075;
-  height: 86vh;
+  height: auto;
   backdrop-filter: blur(15px);
   -mox-backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px); /* Safari */
+}
+
+.mb_intro {
+  margin-bottom: -162px;
 }
 
 .top_nav {
@@ -1264,6 +1268,8 @@ ul {
   color: white;
   text-align: center;
   padding: 2rem 0;
+  position: relative;
+  z-index: 3;
 }
 .port_lottie {
   position: absolute;
@@ -1878,6 +1884,8 @@ footer .loader_parent {
   display: flex;
   justify-content: center;
   margin-top: 3.3rem;
+  position: relative;
+  bottom: 15px;
 }
 
 .un_padding {

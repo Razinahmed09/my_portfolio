@@ -819,6 +819,30 @@ ul {
   flex-wrap: wrap;
 }
 
+.css_icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  animation: pulse 1.7s infinite;
+} 
+.css_icon img {
+  /* mix-blend-mode: color-burn; */
+
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 #ff646b;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
 .skill-item {
   background: #e30a54;
   animation: pulse 1.7s infinite;
@@ -840,28 +864,7 @@ ul {
   transform: scale(1.1) !important;
 }
 
-.css_icon {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-}
-.css_icon img {
-  /* mix-blend-mode: color-burn; */
 
-  border-radius: 50%;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 #ff646b;
-  }
-
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
-}
 
 /* From Uiverse.io by mobinkakei */
 .wrapper {
@@ -1881,11 +1884,15 @@ footer .loader-square:nth-of-type(7) {
 }
 
 footer .loader_parent {
-  display: flex;
-  justify-content: center;
-  margin-top: 3.3rem;
-  position: relative;
-  bottom: 15px;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 1rem; */
+      position: absolute;
+      bottom: 15px;
+      /* margin: 0 auto; */
+      transform: translate(-50%, -50%);
+      left: 50%;
+      bottom: -28px;
 }
 
 .un_padding {
@@ -2300,6 +2307,14 @@ footer .loader_parent {
 .intro h4 {
   padding-top: 2rem;
 }
+.contact_lottie {
+  left: -61px;
+  bottom: 400px;
+}
+.contact_lottie lottie-player {
+  width: 100% !important;
+  height: 100% !important;
+}
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .sec1-banner .row {
@@ -2348,7 +2363,7 @@ footer .loader_parent {
   .top_to_bottom a i {
     right: 0px;
     top: 10px;
-    left: 150px;
+    left: 136px;
   }
   .mb_intro {
     display: flex;
@@ -2473,6 +2488,14 @@ footer .loader_parent {
 }
 .sec5_contactUs .inputBox span, .sec5_contactUs .inputBox1 span {
   left: 50px;
+}
+.contact_lottie {
+  left: -61px;
+  bottom: 400px;
+}
+.contact_lottie lottie-player {
+  width: 100% !important;
+  height: 100% !important;
 }
 }
 

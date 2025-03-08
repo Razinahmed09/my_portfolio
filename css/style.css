@@ -190,7 +190,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec1-banner {
-  background-image: url("/img/banner-modified_11zon.webp");
+  background-image: url("/img/bg.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -266,7 +266,7 @@ ul {
 .hero-sec {
   background: #00000075;
   height: auto;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
   -mox-backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px); /* Safari */
 }
@@ -618,7 +618,8 @@ ul {
 
 .sec2-creative {
   margin: 7rem 7rem;
-  background-color: #111;
+  /* background-color: #111; */
+  background-image: url("/img/bg.gif");
   height: auto;
   position: relative;
 }
@@ -1255,13 +1256,15 @@ ul {
 }
 
 .sec4_ourwork {
-  background-color: #111;
+  /* background-color: #111; */
+  background-image: url("/img/bg.gif");
   height: auto;
   /* padding: 2rem 0; */
 }
 
 .fluid_parent {
-  background-color: #111;
+  /* background-color: #111; */
+  background-image: url("/img/bg.gif");
   padding: 2rem;
 }
 
@@ -1465,7 +1468,8 @@ ul {
 /* sec5_contactUs */
 
 .sec5_contactUs {
-  background-color: #111;
+  /* background-color: #111; */
+  background-image: url("/img/bg.gif");
   padding: 0rem 7rem;
 }
 
@@ -1735,7 +1739,8 @@ ul {
 /* footer */
 
 footer {
-  background-color: #111;
+  /* background-color: #111; */
+  background-image: url("/img/bg.gif");
   padding: 5rem 0;
   
 }

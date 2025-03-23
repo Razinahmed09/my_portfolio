@@ -702,7 +702,9 @@ ul {
   top: unset;
   bottom: 200px;
 }
-
+.about-child {
+  background-color: #00000075 !important;
+}
 /* .sec3-port .process-section {
   max-width: 800px;
   margin: 0 auto;
@@ -1310,6 +1312,24 @@ ul {
 .sec4_ourwork  .tab-content {
   padding-top: 3rem;
 }
+.view-all {
+  display: flex;
+  justify-content: center;
+}
+.view-all button {
+  border: none;
+  border: 2px solid white;
+  background-color: #bb0040;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
+}
+.view-all button:hover {
+  background-color: white;
+  border: 2px solid #bf0041;
+  color: black;
+}
 .nav-tabs {
     display: flex;
     justify-content: center;
@@ -1339,6 +1359,9 @@ ul {
   position: relative;
   z-index: 2;
   height: 214px;
+}
+.card-body .card-text {
+  display: none;
 }
 .sec4_ourwork  .card .tags span {
   background-color: rgba(184, 0, 63, 1);
@@ -2155,7 +2178,7 @@ footer .loader_parent {
     height: 232px;
   }
   .card-body {
-    height: 232px;
+    height: 190px;
   }
 
 }

@@ -105,13 +105,13 @@ p {
 /* stylish cursor */
 
 .rounded {
-  width: 30px;
-  height: 30px;
+  width: 12px;
+  height: 12px;
   border: 2px solid #fff;
-  background: transparent;
+  background: white;
   border-radius: 100% !important;
   /* transition: all ease-in-out 0.3s; */
-  /* box-shadow: rgba(255, 0, 0, 0.25) 0px 54px 55px, rgba(255, 0, 0, 0.12) 0px -12px 30px, rgba(247, 14, 14, 0.12) 0px 4px 6px, rgba(255, 174, 0, 0.17) 0px 12px 13px, rgba(173, 3, 3, 0.09) 0px -3px 5px; */
+  box-shadow: rgba(255, 0, 0, 0.591) 0px 5px 15px;
   z-index: 100;
   position: fixed;
 }
@@ -126,6 +126,42 @@ p {
 }
 
 /* stylish cursor */
+
+
+/* ================= Wave Bouncing Loading Animation ================= */
+
+.loader-parent-2 {
+  position: absolute;
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  font-family:Tahoma, sans-serif;
+  z-index: 1100;
+}
+
+.wave-bouncing-loading-animation{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 44px;
+  color: #bc0041;
+  -webkit-box-reflect: below -0.4em linear-gradient(transparent, #00000045);
+}
+.wave-bouncing-loading-animation > span {
+  display: inline-block;
+  font-weight: bolder;
+  animation: bouncing-wave-animation 2s infinite;
+  animation-delay: calc(.25s * var(--item));
+}
+@keyframes bouncing-wave-animation {
+  0%, 40%, 100% {
+      transform: translateY(0);
+  }
+  20% {
+      transform: translateY(-0.4em);
+  }
+}
 
 a {
   text-decoration: none;
@@ -2616,6 +2652,9 @@ footer .loader_parent {
 .lottie_header {
   width: 210px;
 }
+.wave-bouncing-loading-animation{
+  font-size: 22px;
+}
 .port_disrip {
   height: 270px;
 }
@@ -2703,5 +2742,8 @@ footer .loader_parent {
   }
   .sec1-banner .top_to_bottom a {
     right: -27px;
+  }
+  .wave-bouncing-loading-animation{
+    font-size: 20px;
   }
 }

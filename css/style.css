@@ -2380,6 +2380,9 @@ footer .loader_parent {
   width: 100% !important;
   height: 100% !important;
 }
+.mb_intro {
+  margin-bottom: -106px;
+}
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .sec1-banner .row {
@@ -2732,6 +2735,18 @@ footer .loader_parent {
 .port_intro h2 {
   font-size: 22px;
   letter-spacing: 1px;
+}
+.mb_intro {
+  margin-bottom: 0;
+}
+.sec1-banner .intro {
+  display: none;
+}
+.page_no h3 {
+  bottom: -60px;
+}
+.sec3-port .page_no h3 {
+  bottom: -22px;
 }
 }
 

@@ -204,7 +204,9 @@ strong {
   font-family: Montserrat-ExtraBold;
   src: url("../font/Montserrat-ExtraBold.woff2");
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body::-webkit-scrollbar {
   width: 10px;
 }
@@ -815,6 +817,10 @@ ul {
   margin-top: -20px;
   
 } */
+
+.port_intro h3 {
+  font-family: 'Montserrat-Medium';
+}
 
 @keyframes identifier {
   0% {
@@ -1738,6 +1744,12 @@ ul {
 .contact_lottie {
   bottom: -103px;
   left: -24px;
+  z-index: 1;
+}
+
+.custom-row {
+  position: relative;
+  z-index: 2;
 }
 
 .contact_lottie2 {

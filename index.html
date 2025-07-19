@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
   <div class="loader-parent-2" id="loader-parent-2">
     <div class="wave-bouncing-loading-animation" role="alert" aria-busy="true" aria-label="Portfolio">
       <span style="--item:1">R</span>
@@ -427,6 +427,9 @@
                           <img src="./img/Jquery_icon.jpg" alt="css.png" width="40px" height="40px" />jQuery
                         </div>
                         <div class="skill-item css_icon">
+                          <img src="./img/gsap.webp" alt="css.png" width="40px" height="40px" />GSAP
+                        </div>
+                        <div class="skill-item css_icon">
                           <img src="./img/adobe_icon.jpg" alt="css.png" width="40px" height="40px" />Adobe
                         </div>
                         <div class="skill-item css_icon">
@@ -572,6 +575,62 @@
                       <div class="uncard_parent">
                         <div class="container">
                           <div class="row">
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
+                              data-aos-duration="1000">
+                              <div class="anchor_parent">
+                                <a href="https://singwithme.thevisionbrands.com/" target="_blank">
+                                  <div class="card" style="width: 18rem">
+                                    <div class="card_img">
+                                      <img src="./img/singwithme.png" class="card-img-top" alt="Project" loading="lazy" />
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="tags mb-2">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                      </div>
+                                      <h5 class="card-title">
+                                        SingWithMe
+                                      </h5>
+                                      <p class="card-text">
+                                        June 2025 – June 2025
+                                      </p>
+                                      <p>
+                                        Explore a curated collection of my best work....
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
+                              data-aos-duration="1000">
+                              <div class="anchor_parent">
+                                <a href="https://janines.globalapplicationbrands.com" target="_blank">
+                                  <div class="card" style="width: 18rem">
+                                    <div class="card_img">
+                                      <img src="./img/janines.png" class="card-img-top" alt="Project" loading="lazy" />
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="tags mb-2">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                      </div>
+                                      <h5 class="card-title">
+                                        Janine's
+                                      </h5>
+                                      <p class="card-text">
+                                        December 2024 – January 2025
+                                      </p>
+                                      <p>
+                                        Explore a curated collection of my best work....
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
                             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
                               data-aos-duration="1000">
                               <div class="anchor_parent">
@@ -1788,12 +1847,17 @@
 
 
     window.addEventListener("load", function () {
-      setTimeout(function () {
-        const loader = document.getElementById("loader-parent-2");
-        loader.classList.add("hide");
-        setTimeout(() => loader.style.display = "none", 500); // wait for fade-out
-      }, 3000);
-    });
+  setTimeout(function () {
+    const loader = document.getElementById("loader-parent-2");
+    loader.classList.add("hide");
+
+    // Wait for fade-out to finish, then hide loader and enable scroll
+    setTimeout(() => {
+      loader.style.display = "none";
+      document.body.style.overflow = "auto"; // Re-enable scrolling
+    }, 500); // match transition time
+  }, 3000); // loader display duration
+});
 
   </script>
 

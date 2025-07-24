@@ -865,10 +865,9 @@ ul {
 }
 
 .css_icon {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  animation: pulse 1.7s infinite;
+  /* display: flex;
+  justify-content: space-between; */
+  /* animation: pulse 1.7s infinite; */
 } 
 .css_icon img {
   /* mix-blend-mode: color-burn; */
@@ -876,6 +875,22 @@ ul {
   border-radius: 50%;
 }
 
+
+
+.skill-item {
+  background: #e30a54;
+  gap: 8px;
+  animation: pulse 1.7s infinite;
+  transition: all .4s ease-in-out !important;
+  color: #fff;
+  padding: 4px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -888,25 +903,10 @@ ul {
   }
 }
 
-.skill-item {
-  background: #e30a54;
-  animation: pulse 1.7s infinite;
-  color: #fff;
-  padding: 4px 15px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  display: flex;
-  /* width: 130px; */
-  align-items: center;
-  justify-content: space-between;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out !important;
-}
-
 .skill-item:hover {
   background: rgb(160, 1, 75);
-  transition: all 0.3s ease-in-out !important;
-  transform: scale(1.1) !important;
+  /* transition: all 0.3s ease-in-out !important; */
+  /* transform: scale(1.1) !important; */
 }
 
 

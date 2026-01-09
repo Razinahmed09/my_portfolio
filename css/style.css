@@ -460,7 +460,29 @@ ul {
   /* padding: 4rem; */
   display: flex;
   justify-content: center;
+  animation: morph 8s ease-in-out infinite;
 }
+
+@keyframes morph {
+
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  50% {
+    border-radius: 50% 60% 30% 60% / 30% 60% 70% 40%;
+  }
+
+  75% {
+    border-radius: 60% 40% 60% 40% / 70% 30% 50% 60%;
+  }
+}
+
 
 .profile-image img {
   width: 345px;
@@ -660,6 +682,7 @@ ul {
   background-image: url("/img/bg.gif");
   height: auto;
   position: relative;
+  border-radius: 35px;
 }
 
 .port_disrip {
@@ -674,6 +697,7 @@ ul {
   height: 585px;
   overflow: hidden;
   width: 90%;
+  animation: morph 8s ease-in-out infinite;
 }
 
 .sec3-port .port_disrip {
@@ -688,7 +712,7 @@ ul {
   height: 425px;
   overflow: hidden;
   width: 75%;
-  animation: mymove 5s infinite;
+  /* animation: mymove 5s infinite; */
 }
 
 @keyframes mymove {
@@ -1310,6 +1334,7 @@ ul {
   /* background-color: #111; */
   background-image: url("/img/bg.gif");
   padding: 2rem;
+  border-radius: 35px;
 }
 
 .sec4_ourwork h2 {
@@ -1547,6 +1572,7 @@ ul {
   );
   height: auto;
   padding: 5rem;
+  border-radius: 35px;
 }
 
 .sec5_contactUs h2 {

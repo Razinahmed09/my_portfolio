@@ -908,7 +908,7 @@ ul {
   transition: all .4s ease-in-out !important;
   color: #fff;
   padding: 4px 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 0.9rem;
   display: flex;
   align-items: center;

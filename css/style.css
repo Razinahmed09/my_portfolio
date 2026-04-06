@@ -1742,6 +1742,7 @@ ul {
     background: linear-gradient(135deg, #14141394, #1414135c), url(../img/svgBg.png);
     pointer-events: none;
     z-index: 0;
+    border-radius: 7rem;
 }
 
 .sec4_ourwork h2 {
@@ -1779,8 +1780,11 @@ ul {
 .uncard_parent .anchor_parent {
   /* border: 3px solid #bd0040; */
   border-radius: 15px;
-  background: #bc0040 !important;
-  margin: 1.2rem 0; 
+  /* background: #bc0040 !important; */
+  margin: 1.2rem 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .sec4_ourwork  .tab-content {
@@ -1790,6 +1794,11 @@ ul {
   display: flex;
   justify-content: center;
 }
+
+.sec4_ourwork .anchor_parent .card_img {
+      overflow: hidden;
+}
+
 .view-all button {
   border: none;
   border: 2px solid white;
@@ -1811,7 +1820,7 @@ ul {
     border: none;
 }
 .sec4_ourwork  .card {
-  background-color: #2a2a3e;
+  background-color: #2a2a3e00;
   border: none;
   color: #ffffff;
   border-radius: 12px;
@@ -1827,12 +1836,18 @@ ul {
 
 }
 .card-body {
-  background-color: #343434 !important;
+  background-color: #0000006b !important;
+  /* backdrop-filter: blur(12px); */
+  /* background: var(--card); */
+  border: 2px solid rgb(255 255 255 / 13%);
   border-radius: 0px 0px 10px 10px;
   padding: 1rem;
   position: relative;
   z-index: 2;
   height: 214px;
+  /* border: 2px solid #aca7a926; */
+  border-top: 0;
+  z-index: 222;
 }
 .card-body .card-text {
   display: none;
@@ -1856,13 +1871,28 @@ ul {
   height: 260px;
   z-index: 1;
 }
-.sec4_ourwork  .card img:hover{
+.sec4_ourwork  .card:hover img{
   transform: scale(1.1);
 }
+
+.sec4_ourwork  .anchor_parent::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 260px;
+    height: 200px;
+    background: radial-gradient(ellipse, rgba(233, 30, 99, 0.1), transparent 70%);
+    pointer-events: none;
+  }
+
 .sec4_ourwork  .nav-tabs .nav-link {
   color: #ff0e61;
   font-family: 'ITC-GardePro-Bold';
   background: #ffffff26;
+  background: #5c59591a;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border: none;
   /* margin-right: 5px; */
   border-radius: 0;
@@ -2326,7 +2356,7 @@ ul {
     }
 
     .contact-section .left-heading {
-      
+      color: white;      
       font-size: clamp(36px, 5vw, 58px);
       font-weight: 800;
       
@@ -2473,10 +2503,15 @@ ul {
 
     .contact-section .form-title {
       
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      margin-bottom: 6px;
+font-size: 22px;
+      
+font-weight: 700;
+      
+/* letter-spacing: -0.01em; */
+      
+margin-bottom: 6px;
+      
+color: white;
     }
 
     .contact-section .form-sub {

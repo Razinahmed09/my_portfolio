@@ -37,33 +37,66 @@
 
 
   <div class="position-relative w-100 h-100">
-    <div class="cursor rounded"></div>
+
+    <!-- <div class="cursor rounded">
+      <div class="cursor_parent"></div>
+    </div> -->
+    <div class="custom-cursor">
+      <span></span>
+    </div>
+
+
+    <div class="fixedBottomtoTop">
+      <a href="#TopBarID"><i class="bi bi-arrow-down"></i></a>
+    </div>
     <!-- sec_1_banner -->
 
-    <header class="sec1-banner">
-      <section class="hero-sec">
-        <div class="container position-relative">
-          <div class="top_nav d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-              <div>
-                <a href="">
-                  <img src="./img/logo.png" alt="logo" width="80px" height="80px" />
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <h3>Razin Ahmed</h3>
-                </a>
-              </div>
+    <nav id="TopBarID">
+      <div class="container">
+        <div id="navbar" class="top_nav d-flex justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="logo">
+              <a href="">
+                <img src="img/logo.png" alt="logo" width="80px" height="80px" />
+              </a>
             </div>
             <div>
-              <a href="https://github.com/Razinahmed09">
-                <button class="btn">
-                  <i class="bi bi-github"></i> Github
-                </button>
+              <a href="">
+                <h3>Razin Ahmed</h3>
               </a>
             </div>
           </div>
+          <div>
+            <ul class="nav_brand">
+              <li><a href="#About">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="mailto:razyn.09@gmail.com">
+              <button class="btn">
+                <i class="fa-solid fa-briefcase"></i> Hire Me
+              </button>
+            </a>
+            <a href="https://wa.me/+923112560696?" target="_blank">
+              <button class="btn un_width">
+                <i class="bi bi-whatsapp"></i> Whatsapp
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="sec1-banner">
+      <section class="hero-sec">
+        <div class="heroVector">
+          <img src="img/elements/obj-3.png" alt="">
+        </div>
+        <div class="container position-relative">
+
           <div class="row">
             <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6" data-aos="fade-up">
               <div class="mb_intro">
@@ -76,15 +109,11 @@
                   <div class="content">
                     <h1 class="title">Creative</h1>
                     <h2>Developer</h2>
-                    <p class="subtitle">Sensible to Frontend</p>
+                    <p class="subtitle">Crafting Modern UI Experiences</p>
                   </div>
 
                   <div class="profile-image">
                     <img src="./img/razin_3.png" alt="Developer Profile" />
-                  </div>
-
-                  <div class="page-number">
-                    <span>01</span>
                   </div>
                 </div>
               </div>
@@ -93,14 +122,14 @@
               <div class="intro">
                 <h1>Creative</h1>
                 <h2>Developer</h2>
-                <h4>Front end Developer</h4>
+                <h4>Crafting Modern UI Experiences</h4>
               </div>
             </div>
           </div>
         </div>
-        <div class="top_to_bottom">
+        <!-- <div class="top_to_bottom">
           <a href="#about-us">Scroll Down <i class="bi bi-arrow-down"></i></a>
-        </div>
+        </div> -->
       </section>
       <div class="position-relative">
         <div class="position-absolute lottie_header">
@@ -143,7 +172,8 @@
             </path>
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/razin-ahmed-a365a5255/" class="social-button linkedin" target="_blank">
+        <a href="https://pk.linkedin.com/in/muhammad-razin-ahmed-a365a5255" class="social-button linkedin"
+          target="_blank">
           <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Icons" stroke="none" stroke-width="1">
@@ -190,13 +220,13 @@
 
     <main>
       <!-- sec2-creative -->
-      <section class="sec2-creative py-5" id="about-us">
+      <section class="sec2-creative py-5">
         <div class="about-child">
           <div class="container pb-5">
             <div class="top_to_bottom">
               <a href="#intro">Scroll Down <i class="bi bi-arrow-down"></i></a>
             </div>
-            <div class="top_nav" data-aos="fade-down" data-aos-duration="1000">
+            <!-- <div class="top_nav" data-aos="fade-down" data-aos-duration="1000">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
                   <div>
@@ -218,7 +248,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="row py-5 align-items-center">
               <div class="col-xxl-6 col-xl-5 col-lg-5" data-aos="fade-down" data-aos-duration="1000">
                 <div class="port_parent">
@@ -284,9 +314,6 @@
                 </div>
               </div>
             </div>
-            <div class="page_no" data-aos="flip-left" data-aos-duration="1000">
-              <h3>01</h3>
-            </div>
           </div>
         </div>
       </section>
@@ -307,14 +334,18 @@
       </div>
       <!-- dots_animation -->
 
+
       <!-- sec3-port -->
       <section class="sec2-creative sec3-port py-5" id="About">
         <div class="about-child">
+          <div class="vectorLEFT01">
+            <img src="img/elements/left01.png" alt="">
+          </div>
           <div class="container">
             <div class="top_to_bottom">
               <a href="#Portfolio">Scroll Down <i class="bi bi-arrow-down"></i></a>
             </div>
-            <div class="top_nav" data-aos="fade-down" data-aos-duration="1000">
+            <!-- <div class="top_nav" data-aos="fade-down" data-aos-duration="1000">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
                   <div>
@@ -336,25 +367,34 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="container">
               <div class="row">
                 <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12" data-aos="flip-left" data-aos-duration="1000">
                   <div class="port_intro pt-3">
                     <h2 class="text-white">FRONTEND DEVELOPER</h2>
-                    <p class="text-white pt-4">
-                     Experienced Frontend and Web Application Developer with a strong background in building and optimizing responsive, user-centric web applications. Skilled in HTML, CSS, JavaScript, and modern frontend development practices, with a proven track record of performance optimization, bug fixing, and solving complex UI/UX challenges.
+                    <p class="text-white pt-4  w-75">
+                      Experienced Frontend and Web Application Developer with a strong background in building
+                      responsive, user-centric web applications. Skilled in HTML, CSS, JavaScript, and modern frontend
+                      practices, with a focus on performance optimization and solving complex UI/UX challenges.
                     </p>
                     <div>
                       <ul class="my_intro pt-4 w-75">
                         <li>
-                          Collaborated closely with designers and backend developers to deliver seamless, high-performance web solutions. Adept at translating design concepts into functional interfaces and ensuring cross-browser compatibility and responsive behavior across devices.
+                          Collaborated closely with designers and backend teams to deliver seamless, high-performance
+                          solutions. Strong ability to convert design concepts into functional, pixel-perfect interfaces
+                          while ensuring cross-browser compatibility and responsiveness across all devices.
                         </li>
                         <li>
-                         Possess foundational knowledge of Laravel, particularly in frontend integration, and have contributed to Laravel-based projects by working with Blade templates, routing, and integrating frontend components with backend logic.
+                          Hands-on experience working on .NET-based dashboards and web portals, building scalable and
+                          data-driven interfaces, including booking systems and internal management tools. Also
+                          contributed to Laravel-based projects through Blade templates and frontend-backend
+                          integration.
                         </li>
                         <li>
-                          Committed to continuous learning and professional growth, with a passion for clean code, performance tuning, and delivering high-quality digital experiences.
+                          Familiar with modern frameworks like React and Next.js (basic level), with an understanding of
+                          component-based architecture and routing. Committed to continuous learning, clean code
+                          practices, and delivering high-quality digital experiences.
                         </li>
                       </ul>
                       <div class="d-flex py-3">
@@ -402,7 +442,7 @@
                     <h2>Skills</h2>
 
                     <div class="skills-category">
-                      <h3>Featured</h3>
+                      <!-- <h3>Featured</h3> -->
                       <div class="skills-grid">
                         <!-- <div class="skill-item">Astro</div> -->
                         <div class="skill-item css_icon">
@@ -412,7 +452,7 @@
                           <img src="./img/css_icon.png" alt="css.png" width="40px" height="40px" />CSS
                         </div>
                         <div class="skill-item css_icon">
-                        <img src="./img/tailwind_icon.webp" alt="css.png" width="40px" height="40px" />Tailwind CSS
+                          <img src="./img/tailwind_icon.webp" alt="css.png" width="40px" height="40px" />Tailwind CSS
                         </div>
                         <div class="skill-item css_icon">
                           <img src="./img/bootsrap_icon.jpg" alt="css.png" width="40px" height="40px" />Bootstrap
@@ -441,7 +481,7 @@
                         <div class="skill-item css_icon">
                           <img src="./img/aos_icon.png" alt="css.png" width="40px" height="40px" />AOS
                         </div>
-                        
+
                         <!-- <div class="skill-item">Vue</div> -->
                       </div>
                     </div>
@@ -511,13 +551,130 @@
                 </div>
               </div>
             </div>
-            <div class="page_no" data-aos="flip-left" data-aos-duration="1000">
+            <!-- <div class="page_no" data-aos="flip-left" data-aos-duration="1000">
               <h3>02</h3>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
       <!-- sec3-port -->
+
+      <!-- experiences sec -->
+
+      <section class="exp-section" id="experience">
+        <div class="expVector">
+          <img src="img/elements/right02.png" alt="">
+        </div>
+        <div class="bg-glow"></div>
+
+        <!-- Header -->
+        <div class="header">
+          <div class="eyebrow">Career</div>
+          <h1 class="heading">Work <span>Experience</span></h1>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Entry 1 -->
+          <div class="entry" data-entry>
+            <div class="dot-col">
+              <div class="dot"></div>
+            </div>
+            <div class="card">
+              <div class="card-glow"></div>
+              <div class="period">
+                <span class="period-dot"></span>
+                Feb 2026 — Present
+              </div>
+              <h2 class="job-title">Frontend Developer</h2>
+              <div class="meta">
+                Eurosoft Tech Limited
+                <span class="meta-sep"></span>
+                <span class="type-badge">Full-time</span>
+              </div>
+              <p class="desc">
+                Worked on .NET-based applications from a front-end perspective, building pixel-perfect, responsive
+                dashboards and portals. Focused on UI/UX, performance, SEO, and interactive animations, while
+                maintaining clean, efficient code and collaborating effectively with backend teams.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">JavaScript (ES6)</span>
+                <span class="tag">GSAP</span>
+                <span class="tag">jQuery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 2 -->
+          <div class="entry" data-entry>
+            <div class="dot-col">
+              <div class="dot"></div>
+            </div>
+            <div class="card">
+              <div class="card-glow"></div>
+              <div class="period">Jan 2025 — Feb 2026</div>
+              <h2 class="job-title">Frontend Developer</h2>
+              <div class="meta">
+                MS Global INC
+                <span class="meta-sep"></span>
+                <span class="type-badge">Full-time</span>
+              </div>
+              <p class="desc">
+                Built scalable web interfaces and dashboards using HTML, CSS, and JavaScript, focusing on responsive
+                UI/UX, performance, SEO, and interactive animations (GSAP, WOW.js), with experience in .NET and Laravel
+                integrations
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GSAP</span>
+                <span class="tag">jQuery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 3 -->
+          <div class="entry" data-entry>
+            <div class="dot-col">
+              <div class="dot"></div>
+            </div>
+            <div class="card">
+              <div class="card-glow"></div>
+              <div class="period">Aug 2023 — Dec 2024</div>
+              <h2 class="job-title">Junior Frontend Developer (Intern → Full-Time)</h2>
+              <div class="meta">
+                Pace Global Pvt Ltd
+                <span class="meta-sep"></span>
+                <span class="type-badge">Contract</span>
+              </div>
+              <p class="desc">
+                Converted Figma designs to responsive HTML/CSS, maintained client
+                websites, and built internal tooling dashboards with a focus on
+                performance and cross-browser compatibility.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /timeline-wrapper -->
+      </section>
+
+      <!-- experiences sec -->
+
+
 
       <div class="position-relative">
         <div class="middle_lottie">
@@ -587,7 +744,7 @@
                                       <div class="tags mb-2">
                                         <span>NextJs</span>
                                         <span>Typescript</span>
-                                        <span>CSS</span>
+                                        <!-- <span>Tailwind</span> -->
                                       </div>
                                       <h5 class="card-title">
                                         TYF Studio
@@ -609,7 +766,8 @@
                                 <a href="https://sebastianink.thevisionbrands.com/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/sebastian.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/sebastian.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -637,7 +795,8 @@
                                 <a href="https://glassmemories.thevisionbrands.com/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/glassMemories.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/glassMemories.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -665,7 +824,8 @@
                                 <a href="https://scotforthconnection.netlify.app/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/scotforthconnection.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/scotforthconnection.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -693,7 +853,8 @@
                                 <a href="https://msglobalinc.org/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/msglobal-img.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/msglobal-img.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -721,7 +882,8 @@
                                 <a href="https://singwithmerecords.co.uk/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/singwithmerecords.co.uk_.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/singwithmerecords.co.uk_.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -861,7 +1023,8 @@
                                 <a href="https://soulandsilica.com/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/pattiglasss.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/pattiglasss.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -1089,8 +1252,7 @@
                                 <a href="https://kppreventsmarketing.com/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/kkpr.png" class="card-img-top"
-                                        alt="Project" loading="lazy" />
+                                      <img src="./img/kkpr.png" class="card-img-top" alt="Project" loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -1099,7 +1261,7 @@
                                         <span>JavaScript</span>
                                       </div>
                                       <h5 class="card-title">
-                                       KPPR Brand
+                                        KPPR Brand
                                       </h5>
                                       <p class="card-text">
                                         December 2024 – January 2025
@@ -1113,91 +1275,91 @@
                               </div>
                             </div>
                             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="https://osubare.netlify.app/" target="_blank">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/osubare.webp" loading="lazy" class="card-img-top" alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
-                                              </div>
-                                              <h5 class="card-title">
-                                                Osubare E-Commerce
-                                              </h5>
-                                              <p class="card-text">
-                                                December 2024 – January 2025
-                                              </p>
-                                              <p>
-                                                Explore a curated collection of my best work...
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </a>
-                                      </div>
+                              data-aos-duration="1000">
+                              <div class="anchor_parent">
+                                <a href="https://osubare.netlify.app/" target="_blank">
+                                  <div class="card" style="width: 18rem">
+                                    <div class="card_img">
+                                      <img src="./img/osubare.webp" loading="lazy" class="card-img-top" alt="Project" />
                                     </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="https://nutriscs.com/" target="_blank">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/nutrics/nutriscs_home`.webp" loading="lazy" class="card-img-top"
-                                                alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
-                                              </div>
-                                              <h5 class="card-title">
-                                                Nutriscs E-Commerce
-                                              </h5>
-                                              <p class="card-text">
-                                                September 2024 – October 2024
-                                              </p>
-                                              <p>
-                                                Explore a curated collection of my best work...
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </a>
+                                    <div class="card-body">
+                                      <div class="tags mb-2">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
                                       </div>
+                                      <h5 class="card-title">
+                                        Osubare E-Commerce
+                                      </h5>
+                                      <p class="card-text">
+                                        December 2024 – January 2025
+                                      </p>
+                                      <p>
+                                        Explore a curated collection of my best work...
+                                      </p>
                                     </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="https://assignmentwritingservices.ae/" target="_blank">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/aws/assignmentwritingservices.webp" loading="lazy"
-                                                class="card-img-top" alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
-                                              </div>
-                                              <h5 class="card-title">
-                                                Assignment Writing Services
-                                              </h5>
-                                              <p class="card-text">
-                                                June 2024 – July 2024
-                                              </p>
-                                              <p>
-                                                Explore a curated collection of my best work...
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </a>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
+                              data-aos-duration="1000">
+                              <div class="anchor_parent">
+                                <a href="https://nutriscs.com/" target="_blank">
+                                  <div class="card" style="width: 18rem">
+                                    <div class="card_img">
+                                      <img src="./img/nutrics/nutriscs_home`.webp" loading="lazy" class="card-img-top"
+                                        alt="Project" />
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="tags mb-2">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
                                       </div>
+                                      <h5 class="card-title">
+                                        Nutriscs E-Commerce
+                                      </h5>
+                                      <p class="card-text">
+                                        September 2024 – October 2024
+                                      </p>
+                                      <p>
+                                        Explore a curated collection of my best work...
+                                      </p>
                                     </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
+                              data-aos-duration="1000">
+                              <div class="anchor_parent">
+                                <a href="https://assignmentwritingservices.ae/" target="_blank">
+                                  <div class="card" style="width: 18rem">
+                                    <div class="card_img">
+                                      <img src="./img/aws/assignmentwritingservices.webp" loading="lazy"
+                                        class="card-img-top" alt="Project" />
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="tags mb-2">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                      </div>
+                                      <h5 class="card-title">
+                                        Assignment Writing Services
+                                      </h5>
+                                      <p class="card-text">
+                                        June 2024 – July 2024
+                                      </p>
+                                      <p>
+                                        Explore a curated collection of my best work...
+                                      </p>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
                             <div class="col-12">
                               <div id="toggleDiv" style="display: none;">
                                 <div class="uncard_parent">
@@ -1232,9 +1394,9 @@
                                         </a>
                                       </div>
                                     </div> -->
-                                    
-                                    
-                                    <!-- <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
+
+
+                                      <!-- <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
                                       data-aos-duration="1000">
                                       <div class="anchor_parent">
                                         <a href="https://professionalessaywriting.co.uk/ " target="_blank">
@@ -1263,206 +1425,209 @@
                                         </a>
                                       </div>
                                     </div> -->
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="https://grantwritingavenue.com/" target="_blank">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/grant-avenue/grantwritingavenue.com.webp" loading="lazy"
-                                                class="card-img-top" alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
+                                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
+                                        data-aos-duration="1000">
+                                        <div class="anchor_parent">
+                                          <a href="https://grantwritingavenue.com/" target="_blank">
+                                            <div class="card" style="width: 18rem">
+                                              <div class="card_img">
+                                                <img src="./img/grant-avenue/grantwritingavenue.com.webp" loading="lazy"
+                                                  class="card-img-top" alt="Project" />
                                               </div>
-                                              <h5 class="card-title">
-                                                Grant Avenue Writing
-                                              </h5>
-                                              <p class="card-text">
-                                                December 2023 – January 2023
-                                              </p>
-                                              <p>
-                                                Explore a curated collection of my best work...
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </a>
-                                      </div>
-                                    </div>
-          
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="https://nobleacademicwriters.uk/" target="_blank">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/noble/nobleacademicwriters.uk.webp" loading="lazy"
-                                                class="card-img-top" alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
+                                              <div class="card-body">
+                                                <div class="tags mb-2">
+                                                  <span>HTML</span>
+                                                  <span>CSS</span>
+                                                  <span>JavaScript</span>
+                                                </div>
+                                                <h5 class="card-title">
+                                                  Grant Avenue Writing
+                                                </h5>
+                                                <p class="card-text">
+                                                  December 2023 – January 2023
+                                                </p>
+                                                <p>
+                                                  Explore a curated collection of my best work...
+                                                </p>
                                               </div>
-                                              <h5 class="card-title">
-                                                Noble Academic Writers
-                                              </h5>
-                                              <p class="card-text">
-                                                August 2024 – August 2024
-                                              </p>
-                                              <p>
-                                                Explore a curated collection of my best work...
-                                              </p>
                                             </div>
-                                          </div>
-                                        </a>
+                                          </a>
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="https://probrandingsolutions.com/logo-design" target="_blank">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/probrandingsolutions.com_logo-design1.webp" loading="lazy"
-                                                class="card-img-top" alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
+
+                                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
+                                        data-aos-duration="1000">
+                                        <div class="anchor_parent">
+                                          <a href="https://nobleacademicwriters.uk/" target="_blank">
+                                            <div class="card" style="width: 18rem">
+                                              <div class="card_img">
+                                                <img src="./img/noble/nobleacademicwriters.uk.webp" loading="lazy"
+                                                  class="card-img-top" alt="Project" />
                                               </div>
-                                              <h5 class="card-title">
-                                                Pro Branding Solution
-                                              </h5>
-                                              <p class="card-text">
-                                                August 2024 – August 2024
-                                              </p>
-                                              <p>
-                                                Explore a curated collection of my best work...
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="#" target="_blank">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/127.0.0.1_5501_index.html.webp" loading="lazy"
-                                                class="card-img-top" alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
+                                              <div class="card-body">
+                                                <div class="tags mb-2">
+                                                  <span>HTML</span>
+                                                  <span>CSS</span>
+                                                  <span>JavaScript</span>
+                                                </div>
+                                                <h5 class="card-title">
+                                                  Noble Academic Writers
+                                                </h5>
+                                                <p class="card-text">
+                                                  August 2024 – August 2024
+                                                </p>
+                                                <p>
+                                                  Explore a curated collection of my best work...
+                                                </p>
                                               </div>
-                                              <h5 class="card-title">E Project</h5>
-                                              <p class="card-text">
-                                                December 2022 – January 2023
-                                              </p>
-                                              <p>
-                                                This site is Under Development
-                                              </p>
                                             </div>
-                                          </div>
-                                        </a>
+                                          </a>
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="javascript:;">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/roosvelt_new.webp" class="card-img-top" loading="lazy"
-                                                alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
+                                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
+                                        data-aos-duration="1000">
+                                        <div class="anchor_parent">
+                                          <a href="https://probrandingsolutions.com/logo-design" target="_blank">
+                                            <div class="card" style="width: 18rem">
+                                              <div class="card_img">
+                                                <img src="./img/probrandingsolutions.com_logo-design1.webp"
+                                                  loading="lazy" class="card-img-top" alt="Project" />
                                               </div>
-                                              <h5 class="card-title">Roosevelt LP</h5>
-                                              <p class="card-text">
-                                                June 2023 – June 2023
-                                              </p>
-                                              <p>This Site is not live</p>
-                                            </div>
-                                          </div>
-                                        </a>
-                                      </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="javascript:;">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/yt_project.webp" class="card-img-top" loading="lazy"
-                                                alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
+                                              <div class="card-body">
+                                                <div class="tags mb-2">
+                                                  <span>HTML</span>
+                                                  <span>CSS</span>
+                                                  <span>JavaScript</span>
+                                                </div>
+                                                <h5 class="card-title">
+                                                  Pro Branding Solution
+                                                </h5>
+                                                <p class="card-text">
+                                                  August 2024 – August 2024
+                                                </p>
+                                                <p>
+                                                  Explore a curated collection of my best work...
+                                                </p>
                                               </div>
-                                              <h5 class="card-title">
-                                                Practice Project
-                                              </h5>
-                                              <p class="card-text">
-                                                November 2023 – December 2023
-                                              </p>
-                                              <p>This Site is not live</p>
                                             </div>
-                                          </div>
-                                        </a>
+                                          </a>
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
-                                      data-aos-duration="1000">
-                                      <div class="anchor_parent">
-                                        <a href="javascript:;">
-                                          <div class="card" style="width: 18rem">
-                                            <div class="card_img">
-                                              <img src="./img/APP_CODER.webp" loading="lazy" class="card-img-top"
-                                                alt="Project" />
-                                            </div>
-                                            <div class="card-body">
-                                              <div class="tags mb-2">
-                                                <span>HTML</span>
-                                                <span>CSS</span>
-                                                <span>JavaScript</span>
+                                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
+                                        data-aos-duration="1000">
+                                        <div class="anchor_parent">
+                                          <a href="#" target="_blank">
+                                            <div class="card" style="width: 18rem">
+                                              <div class="card_img">
+                                                <img src="./img/127.0.0.1_5501_index.html.webp" loading="lazy"
+                                                  class="card-img-top" alt="Project" />
                                               </div>
-                                              <h5 class="card-title">
-                                                App Coder Application
-                                              </h5>
-                                              <p class="card-text">
-                                                June 2023 – June 2023
-                                              </p>
-                                              <p>This Site is not live</p>
+                                              <div class="card-body">
+                                                <div class="tags mb-2">
+                                                  <span>HTML</span>
+                                                  <span>CSS</span>
+                                                  <span>JavaScript</span>
+                                                </div>
+                                                <h5 class="card-title">E Project</h5>
+                                                <p class="card-text">
+                                                  December 2022 – January 2023
+                                                </p>
+                                                <p>
+                                                  This site is Under Development
+                                                </p>
+                                              </div>
                                             </div>
-                                          </div>
-                                        </a>
+                                          </a>
+                                        </div>
                                       </div>
-                                    </div>
+                                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
+                                        data-aos-duration="1000">
+                                        <div class="anchor_parent">
+                                          <a href="javascript:;">
+                                            <div class="card" style="width: 18rem">
+                                              <div class="card_img">
+                                                <img src="./img/roosvelt_new.webp" class="card-img-top" loading="lazy"
+                                                  alt="Project" />
+                                              </div>
+                                              <div class="card-body">
+                                                <div class="tags mb-2">
+                                                  <span>HTML</span>
+                                                  <span>CSS</span>
+                                                  <span>JavaScript</span>
+                                                </div>
+                                                <h5 class="card-title">Roosevelt LP</h5>
+                                                <p class="card-text">
+                                                  June 2023 – June 2023
+                                                </p>
+                                                <p>This Site is not live</p>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-right"
+                                        data-aos-duration="1000">
+                                        <div class="anchor_parent">
+                                          <a href="javascript:;">
+                                            <div class="card" style="width: 18rem">
+                                              <div class="card_img">
+                                                <img src="./img/yt_project.webp" class="card-img-top" loading="lazy"
+                                                  alt="Project" />
+                                              </div>
+                                              <div class="card-body">
+                                                <div class="tags mb-2">
+                                                  <span>HTML</span>
+                                                  <span>CSS</span>
+                                                  <span>JavaScript</span>
+                                                </div>
+                                                <h5 class="card-title">
+                                                  Practice Project
+                                                </h5>
+                                                <p class="card-text">
+                                                  November 2023 – December 2023
+                                                </p>
+                                                <p>This Site is not live</p>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12" data-aos="flip-left"
+                                        data-aos-duration="1000">
+                                        <div class="anchor_parent">
+                                          <a href="javascript:;">
+                                            <div class="card" style="width: 18rem">
+                                              <div class="card_img">
+                                                <img src="./img/APP_CODER.webp" loading="lazy" class="card-img-top"
+                                                  alt="Project" />
+                                              </div>
+                                              <div class="card-body">
+                                                <div class="tags mb-2">
+                                                  <span>HTML</span>
+                                                  <span>CSS</span>
+                                                  <span>JavaScript</span>
+                                                </div>
+                                                <h5 class="card-title">
+                                                  App Coder Application
+                                                </h5>
+                                                <p class="card-text">
+                                                  June 2023 – June 2023
+                                                </p>
+                                                <p>This Site is not live</p>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                               <div class="view-all">
-                                <button id="toggleButton">View More</button>
+                                <!-- <button >View More</button> -->
+                                <button id="toggleButton" class="btn">
+                                  <i class="bi bi-arrow-down"></i> View More
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -1597,7 +1762,8 @@
                                 <a href="https://glassmemories.thevisionbrands.com/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/glassMemories.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/glassMemories.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -1653,7 +1819,8 @@
                                 <a href="https://pattisglassdesigns.globalapplicationbrands.com/" target="_blank">
                                   <div class="card" style="width: 18rem">
                                     <div class="card_img">
-                                      <img src="./img/pattiglasss.png" class="card-img-top" alt="Project" loading="lazy" />
+                                      <img src="./img/pattiglasss.png" class="card-img-top" alt="Project"
+                                        loading="lazy" />
                                     </div>
                                     <div class="card-body">
                                       <div class="tags mb-2">
@@ -1861,7 +2028,7 @@
                         </div>
                       </div>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -1874,85 +2041,159 @@
 
       <!-- sec4-contact_us -->
 
-      <section class="sec5_contactUs" id="contact">
-        <div class="about-child">
-          <h2 class="text-center" data-aos="zoom-in" data-aos-duration="1000">Contact Us</h2>
-          <div class="position-relative">
-            <div class="contact_lottie2">
-              <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-                type="module"></script>
+      <div class="robot_animated">
+        <img src="img/elements/ai-robot.png" alt="">
+      </div>
 
-              <dotlottie-player src="https://lottie.host/646748a6-fe3f-4903-8d2a-2677fc7d6b0b/XVvs3QLsWr.json"
-                background="transparent" speed="1" style="width: 25%; height: 25%" loop autoplay></dotlottie-player>
+      <section class="contact-section" id="contact">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <div class="inner">
+
+          <!-- ── LEFT ── -->
+          <div class="left">
+            <div class="eyebrow">Get In Touch</div>
+
+            <h2 class="left-heading">
+              Let's Build<br>Something <span>Great.</span>
+            </h2>
+
+            <p class="left-sub">
+              Have a project in mind or just want to say hi?
+              Fill out the form or reach me directly through
+              any of the channels below — I usually reply within 24 hours.
+            </p>
+
+            <div class="socials-label">Reach me on</div>
+
+            <div class="socials">
+
+              <a href="tel:+923112560696" class="social-link">
+                <div class="social-icon icon-phone">
+                  <lord-icon src="https://cdn.lordicon.com/nnzfcuqw.json" trigger="loop" delay="1500" state="in-reveal"
+                    colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
+                  </lord-icon>
+                </div>
+                <div class="social-meta">
+                  <span class="social-name">Call Now</span>
+                  <span class="social-val">+92 (311) 256-0696</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
+              <a href="https://wa.me/+923112560696" target="_blank" rel="noopener" class="social-link">
+                <div class="social-icon icon-wa">
+                  <lord-icon src="https://cdn.lordicon.com/axewyqun.json" trigger="loop" delay="1500" state="in-reveal"
+                    colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
+                  </lord-icon>
+                </div>
+                <div class="social-meta">
+                  <span class="social-name">WhatsApp</span>
+                  <span class="social-val">Chat instantly</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
+              <a href="mailto:razyn.09@gmail.com" class="social-link">
+                <div class="social-icon icon-mail">
+                  <lord-icon src="https://cdn.lordicon.com/vpbspaec.json" trigger="loop" delay="1500"
+                    state="in-assembly" colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
+                  </lord-icon>
+                </div>
+                <div class="social-meta">
+                  <span class="social-name">Mail Us</span>
+                  <span class="social-val">razyn.09@gmail.com</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
+              <a href="https://pk.linkedin.com/in/muhammad-razin-ahmed-a365a5255" target="_blank" rel="noopener"
+                class="social-link">
+                <div class="social-icon icon-li">
+                  <lord-icon src="https://cdn.lordicon.com/qgebwute.json" trigger="loop" delay="2000" state="hover-draw"
+                    colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
+                  </lord-icon>
+                </div>
+                <div class="social-meta">
+                  <span class="social-name">LinkedIn</span>
+                  <span class="social-val">Connect professionally</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
             </div>
           </div>
-          <div class="child_contact">
-            <div class="container">
-              <div class="row align-items-center custom-row">
-                <div class="col-xxl-6 col-xl-5 col-lg-4" data-aos="fade-down" data-aos-duration="1000">
-                  <div class="connect_us">
-                    <div>
-                      <a class="call" href="tel:+923112560696"><i class="bi bi-telephone-fill"></i>Call Now</a>
-                    </div>
-                    <div>
-                      <a class="call whatsapp" href="https://wa.me/+923112560696?" target="_blank"><i
-                          class="bi bi-whatsapp"></i>Whatsapp</a>
-                    </div>
-                    <div>
-                      <a class="call mailto" href="mailto:raheenahmee@gmail.com" target="_blank"><i
-                          class="bi bi-envelope-at-fill"></i>Mail Us</a>
-                    </div>
-                  </div>
+
+          <!-- ── RIGHT — FORM ── -->
+          <div class="form-card">
+            <div class="form-title">Send a Message</div>
+            <p class="form-sub">All fields are required. I'll get back to you ASAP.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-grid">
+
+                <div class="field">
+                  <label for="f-name">Full Name</label>
+                  <input id="f-name" name="user_name" type="text" placeholder="Razin Ahmed" autocomplete="name" />
+                  <span class="err-msg" id="err-name"></span>
                 </div>
-                <div class="col-xxl-6 col-xl-7 col-lg-8" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="contact_form">
-                    <div class="container">
-                      <div class="card">
-                        <a class="singup">Contact Form</a>
-                        <div class="inputBox1">
-                          <input type="text" required="required" />
-                          <span class="user">Email</span>
-                        </div>
 
-                        <div class="inputBox">
-                          <input type="text" required="required" />
-                          <span>Username</span>
-                        </div>
-
-                        <div class="inputBox">
-                          <input type="password" required="required" />
-                          <span>Password</span>
-                        </div>
-
-                        <div>
-                          <button class="btn">
-                            <i class="animation"></i>Submit<i class="animation"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="field">
+                  <label for="f-email">Email Address</label>
+                  <input id="f-email" name="user_email" type="email" placeholder="dummy@example.com"
+                    autocomplete="email" />
+                  <span class="err-msg" id="err-email"></span>
                 </div>
+
+                <div class="field">
+                  <label for="f-phone">Phone (optional)</label>
+                  <input id="f-phone" name="user_phone" type="tel" placeholder="+1 234 567 890" autocomplete="tel" />
+                </div>
+
+                <div class="field">
+                  <label for="f-subject">Subject</label>
+                  <select id="f-subject" name="subject">
+                    <option value="" disabled selected>Select a topic…</option>
+                    <option value="Hiring Purpose">Hiring Purpose</option>
+                    <option value="Freelance Work">Freelance Work</option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <span class="err-msg" id="err-subject"></span>
+                </div>
+
+                <div class="field full">
+                  <label for="f-msg">Message</label>
+                  <textarea id="f-msg" name="message"
+                    placeholder="Tell me about your project, timeline, and budget…"></textarea>
+                  <span class="char-count" id="charCount">0 / 500</span>
+                  <span class="err-msg" id="err-msg"></span>
+                </div>
+
               </div>
-              <div class="position-relative">
-                <div class="position-absolute contact_lottie">
-                  <lottie-player class="airplane" src="https://assets9.lottiefiles.com/packages/lf20_S1knxhjVFb.json"
-                    background="transparent" speed="1" style="width: 70%; height: 70%" loop="" autoplay="">
-                  </lottie-player>
-                </div>
+
+              <div class="submit-row">
+                <button class="btn-submit">
+                  <span class="btn-text">Send Message →</span>
+
+                </button>
+                <p class="privacy-note">🔒 Your data is never shared or sold to anyone.</p>
               </div>
-            </div>
+            </form>
           </div>
+
         </div>
-
       </section>
 
       <!-- sec4-contact_us -->
     </main>
     <footer id="footer">
       <div class="container">
-        <div class="row">
+        <div class="row pt-5">
           <div class="col-12">
+            <div class="position-relative">
             <div class="loader_parent">
               <div class="loader">
                 <div class="loader-square"></div>
@@ -1964,9 +2205,14 @@
                 <div class="loader-square"></div>
               </div>
             </div>
+            </div>
+            
           </div>
         </div>
       </div>
+      <div class="footertext">
+              <p>© 2026 <strong> Razin Ahmed</strong>. Crafted with passion. All rights reserved.</p>
+            </div>
       <!-- place footer here -->
     </footer>
   </div>
@@ -1983,56 +2229,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-  <script>
 
-    document.getElementById("toggleButton").addEventListener("click", function () {
-      var div = document.getElementById("toggleDiv");
-      var button = document.getElementById("toggleButton");
-
-      // Toggle the visibility of the div
-      if (div.style.display === "none") {
-        div.style.display = "block";
-        button.textContent = "View Less"; // Change button text
-      } else {
-        div.style.display = "none";
-        button.textContent = "View More"; // Change button text
-      }
-    });
-
-
-
-    const cursorRounded = document.querySelector(".rounded");
-    const cursorPointed = document.querySelector(".pointed");
-
-    const moveCursor = (e) => {
-      const mouseY = e.clientY;
-      const mouseX = e.clientX;
-
-      cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-
-      cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-    };
-
-    window.addEventListener("mousemove", moveCursor);
-
-
-    window.addEventListener("load", function () {
-  setTimeout(function () {
-    const loader = document.getElementById("loader-parent-2");
-    loader.classList.add("hide");
-
-    // Wait for fade-out to finish, then hide loader and enable scroll
-    setTimeout(() => {
-      loader.style.display = "none";
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    }, 500); // match transition time
-  }, 3000); // loader display duration
-});
-
-  </script>
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/fancybox.js"></script>
   <script>
     AOS.init();
   </script>

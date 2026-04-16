@@ -37,14 +37,25 @@
 
 
   <div class="position-relative w-100 h-100">
-    <div class="cursor rounded"></div>
+
+    <!-- <div class="cursor rounded">
+      <div class="cursor_parent"></div>
+    </div> -->
+    <div class="custom-cursor">
+      <span></span>
+    </div>
+
+
+    <div class="fixedBottomtoTop">
+      <a href="#TopBarID"><i class="bi bi-arrow-down"></i></a>
+    </div>
     <!-- sec_1_banner -->
 
-    <nav>
+    <nav id="TopBarID">
       <div class="container">
         <div id="navbar" class="top_nav d-flex justify-content-between">
           <div class="d-flex align-items-center">
-            <div>
+            <div class="logo">
               <a href="">
                 <img src="img/logo.png" alt="logo" width="80px" height="80px" />
               </a>
@@ -56,17 +67,22 @@
             </div>
           </div>
           <div>
-            <ul class="nav_brand d-flex gap-5">
+            <ul class="nav_brand">
               <li><a href="#About">About</a></li>
-              <li><a href="#Portfolio">Experience</a></li>
+              <li><a href="#experience">Experience</a></li>
               <li><a href="#Portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div>
-            <a href="https://github.com/Razinahmed09">
+            <a href="mailto:razyn.09@gmail.com">
               <button class="btn">
-                <i class="bi bi-github"></i> Github
+                <i class="fa-solid fa-briefcase"></i> Hire Me
+              </button>
+            </a>
+            <a href="https://wa.me/+923112560696?" target="_blank">
+              <button class="btn un_width">
+                <i class="bi bi-whatsapp"></i> Whatsapp
               </button>
             </a>
           </div>
@@ -111,9 +127,9 @@
             </div>
           </div>
         </div>
-        <div class="top_to_bottom">
+        <!-- <div class="top_to_bottom">
           <a href="#about-us">Scroll Down <i class="bi bi-arrow-down"></i></a>
-        </div>
+        </div> -->
       </section>
       <div class="position-relative">
         <div class="position-absolute lottie_header">
@@ -156,7 +172,8 @@
             </path>
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/razin-ahmed-a365a5255/" class="social-button linkedin" target="_blank">
+        <a href="https://pk.linkedin.com/in/muhammad-razin-ahmed-a365a5255" class="social-button linkedin"
+          target="_blank">
           <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Icons" stroke="none" stroke-width="1">
@@ -203,7 +220,7 @@
 
     <main>
       <!-- sec2-creative -->
-      <section class="sec2-creative py-5" id="about-us">
+      <section class="sec2-creative py-5">
         <div class="about-child">
           <div class="container pb-5">
             <div class="top_to_bottom">
@@ -356,27 +373,28 @@
                 <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12" data-aos="flip-left" data-aos-duration="1000">
                   <div class="port_intro pt-3">
                     <h2 class="text-white">FRONTEND DEVELOPER</h2>
-                    <p class="text-white pt-4">
-                      Experienced Frontend and Web Application Developer with a strong background in building and
-                      optimizing responsive, user-centric web applications. Skilled in HTML, CSS, JavaScript, and modern
-                      frontend development practices, with a proven track record of performance optimization, bug
-                      fixing, and solving complex UI/UX challenges.
+                    <p class="text-white pt-4  w-75">
+                      Experienced Frontend and Web Application Developer with a strong background in building
+                      responsive, user-centric web applications. Skilled in HTML, CSS, JavaScript, and modern frontend
+                      practices, with a focus on performance optimization and solving complex UI/UX challenges.
                     </p>
                     <div>
                       <ul class="my_intro pt-4 w-75">
                         <li>
-                          Collaborated closely with designers and backend developers to deliver seamless,
-                          high-performance web solutions. Adept at translating design concepts into functional
-                          interfaces and ensuring cross-browser compatibility and responsive behavior across devices.
+                          Collaborated closely with designers and backend teams to deliver seamless, high-performance
+                          solutions. Strong ability to convert design concepts into functional, pixel-perfect interfaces
+                          while ensuring cross-browser compatibility and responsiveness across all devices.
                         </li>
                         <li>
-                          Possess foundational knowledge of Laravel, particularly in frontend integration, and have
-                          contributed to Laravel-based projects by working with Blade templates, routing, and
-                          integrating frontend components with backend logic.
+                          Hands-on experience working on .NET-based dashboards and web portals, building scalable and
+                          data-driven interfaces, including booking systems and internal management tools. Also
+                          contributed to Laravel-based projects through Blade templates and frontend-backend
+                          integration.
                         </li>
                         <li>
-                          Committed to continuous learning and professional growth, with a passion for clean code,
-                          performance tuning, and delivering high-quality digital experiences.
+                          Familiar with modern frameworks like React and Next.js (basic level), with an understanding of
+                          component-based architecture and routing. Committed to continuous learning, clean code
+                          practices, and delivering high-quality digital experiences.
                         </li>
                       </ul>
                       <div class="d-flex py-3">
@@ -424,7 +442,7 @@
                     <h2>Skills</h2>
 
                     <div class="skills-category">
-                      <h3>Featured</h3>
+                      <!-- <h3>Featured</h3> -->
                       <div class="skills-grid">
                         <!-- <div class="skill-item">Astro</div> -->
                         <div class="skill-item css_icon">
@@ -533,9 +551,9 @@
                 </div>
               </div>
             </div>
-            <div class="page_no" data-aos="flip-left" data-aos-duration="1000">
+            <!-- <div class="page_no" data-aos="flip-left" data-aos-duration="1000">
               <h3>02</h3>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -543,7 +561,10 @@
 
       <!-- experiences sec -->
 
-      <section class="exp-section">
+      <section class="exp-section" id="experience">
+        <div class="expVector">
+          <img src="img/elements/right02.png" alt="">
+        </div>
         <div class="bg-glow"></div>
 
         <!-- Header -->
@@ -1603,7 +1624,10 @@
                                 </div>
                               </div>
                               <div class="view-all">
-                                <button id="toggleButton">View More</button>
+                                <!-- <button >View More</button> -->
+                                <button id="toggleButton" class="btn">
+                                  <i class="bi bi-arrow-down"></i> View More
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -2017,81 +2041,11 @@
 
       <!-- sec4-contact_us -->
 
-      <!-- <section class="sec5_contactUs" id="contact">
-        <div class="about-child">
-          <h2 class="text-center" data-aos="zoom-in" data-aos-duration="1000">Contact Us</h2>
-          <div class="position-relative">
-            <div class="contact_lottie2">
-              <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-                type="module"></script>
+      <div class="robot_animated">
+        <img src="img/elements/ai-robot.png" alt="">
+      </div>
 
-              <dotlottie-player src="https://lottie.host/646748a6-fe3f-4903-8d2a-2677fc7d6b0b/XVvs3QLsWr.json"
-                background="transparent" speed="1" style="width: 25%; height: 25%" loop autoplay></dotlottie-player>
-            </div>
-          </div>
-          <div class="child_contact">
-            <div class="container">
-              <div class="row align-items-center custom-row">
-                <div class="col-xxl-6 col-xl-5 col-lg-4" data-aos="fade-down" data-aos-duration="1000">
-                  <div class="connect_us">
-                    <div>
-                      <a class="call" href="tel:+923112560696"><i class="bi bi-telephone-fill"></i>Call Now</a>
-                    </div>
-                    <div>
-                      <a class="call whatsapp" href="https://wa.me/+923112560696?" target="_blank"><i
-                          class="bi bi-whatsapp"></i>Whatsapp</a>
-                    </div>
-                    <div>
-                      <a class="call mailto" href="mailto:raheenahmee@gmail.com" target="_blank"><i
-                          class="bi bi-envelope-at-fill"></i>Mail Us</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xxl-6 col-xl-7 col-lg-8" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="contact_form">
-                    <div class="container">
-                      <div class="card">
-                        <a class="singup">Contact Form</a>
-                        <div class="inputBox1">
-                          <input type="text" required="required" />
-                          <span class="user">Email</span>
-                        </div>
-
-                        <div class="inputBox">
-                          <input type="text" required="required" />
-                          <span>Username</span>
-                        </div>
-
-                        <div class="inputBox">
-                          <input type="password" required="required" />
-                          <span>Password</span>
-                        </div>
-
-                        <div>
-                          <button class="btn">
-                            <i class="animation"></i>Submit<i class="animation"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="position-relative">
-                <div class="position-absolute contact_lottie">
-                  <lottie-player class="airplane" src="https://assets9.lottiefiles.com/packages/lf20_S1knxhjVFb.json"
-                    background="transparent" speed="1" style="width: 70%; height: 70%" loop="" autoplay="">
-                  </lottie-player>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section> -->
-
-
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
 
@@ -2115,7 +2069,7 @@
 
             <div class="socials">
 
-              <a href="tel:+1234567890" class="social-link">
+              <a href="tel:+923112560696" class="social-link">
                 <div class="social-icon icon-phone">
                   <lord-icon src="https://cdn.lordicon.com/nnzfcuqw.json" trigger="loop" delay="1500" state="in-reveal"
                     colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
@@ -2123,12 +2077,12 @@
                 </div>
                 <div class="social-meta">
                   <span class="social-name">Call Now</span>
-                  <span class="social-val">+1 (234) 567-890</span>
+                  <span class="social-val">+92 (311) 256-0696</span>
                 </div>
                 <span class="social-arrow">→</span>
               </a>
 
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="social-link">
+              <a href="https://wa.me/+923112560696" target="_blank" rel="noopener" class="social-link">
                 <div class="social-icon icon-wa">
                   <lord-icon src="https://cdn.lordicon.com/axewyqun.json" trigger="loop" delay="1500" state="in-reveal"
                     colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
@@ -2141,7 +2095,7 @@
                 <span class="social-arrow">→</span>
               </a>
 
-              <a href="mailto:hello@yoursite.com" class="social-link">
+              <a href="mailto:razyn.09@gmail.com" class="social-link">
                 <div class="social-icon icon-mail">
                   <lord-icon src="https://cdn.lordicon.com/vpbspaec.json" trigger="loop" delay="1500"
                     state="in-assembly" colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
@@ -2149,12 +2103,13 @@
                 </div>
                 <div class="social-meta">
                   <span class="social-name">Mail Us</span>
-                  <span class="social-val">hello@yoursite.com</span>
+                  <span class="social-val">razyn.09@gmail.com</span>
                 </div>
                 <span class="social-arrow">→</span>
               </a>
 
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="social-link">
+              <a href="https://pk.linkedin.com/in/muhammad-razin-ahmed-a365a5255" target="_blank" rel="noopener"
+                class="social-link">
                 <div class="social-icon icon-li">
                   <lord-icon src="https://cdn.lordicon.com/qgebwute.json" trigger="loop" delay="2000" state="hover-draw"
                     colors="primary:#ffffff,secondary:#ffffff" style="width:250px;height:250px">
@@ -2180,13 +2135,13 @@
 
                 <div class="field">
                   <label for="f-name">Full Name</label>
-                  <input id="f-name" name="user_name" type="text" placeholder="John Doe" autocomplete="name" />
+                  <input id="f-name" name="user_name" type="text" placeholder="Razin Ahmed" autocomplete="name" />
                   <span class="err-msg" id="err-name"></span>
                 </div>
 
                 <div class="field">
                   <label for="f-email">Email Address</label>
-                  <input id="f-email" name="user_email" type="email" placeholder="john@example.com"
+                  <input id="f-email" name="user_email" type="email" placeholder="dummy@example.com"
                     autocomplete="email" />
                   <span class="err-msg" id="err-email"></span>
                 </div>
@@ -2200,7 +2155,7 @@
                   <label for="f-subject">Subject</label>
                   <select id="f-subject" name="subject">
                     <option value="" disabled selected>Select a topic…</option>
-                    <option value="Project Inquiry">Project Inquiry</option>
+                    <option value="Hiring Purpose">Hiring Purpose</option>
                     <option value="Freelance Work">Freelance Work</option>
                     <option value="Collaboration">Collaboration</option>
                     <option value="Feedback">Feedback</option>
@@ -2236,8 +2191,9 @@
     </main>
     <footer id="footer">
       <div class="container">
-        <div class="row">
+        <div class="row pt-5">
           <div class="col-12">
+            <div class="position-relative">
             <div class="loader_parent">
               <div class="loader">
                 <div class="loader-square"></div>
@@ -2249,9 +2205,14 @@
                 <div class="loader-square"></div>
               </div>
             </div>
+            </div>
+            
           </div>
         </div>
       </div>
+      <div class="footertext">
+              <p>© 2026 <strong> Razin Ahmed</strong>. Crafted with passion. All rights reserved.</p>
+            </div>
       <!-- place footer here -->
     </footer>
   </div>

@@ -40,19 +40,26 @@ window.addEventListener("scroll", function () {
 
 
 
-    const cursorRounded = document.querySelector(".rounded");
-    const cursorPointed = document.querySelector(".pointed");
+    // const cursorRounded = document.querySelector(".rounded");
+    // const cursorPointed = document.querySelector(".pointed");
 
-    const moveCursor = (e) => {
-      const mouseY = e.clientY;
-      const mouseX = e.clientX;
+    // const moveCursor = (e) => {
+    //   const mouseY = e.clientY;
+    //   const mouseX = e.clientX;
 
-      cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    //   cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 
-      cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-    };
+    //   cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    // };
 
-    window.addEventListener("mousemove", moveCursor);
+    // window.addEventListener("mousemove", moveCursor);
+
+    // JS
+        const cursor = document.querySelector('.custom-cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
 
 
     window.addEventListener("load", function () {

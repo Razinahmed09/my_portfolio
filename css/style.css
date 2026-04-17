@@ -540,7 +540,7 @@ nav button:hover:after,
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 222;
+  z-index: 2222222;
   left: 0;
   border-radius: 0;
 }
@@ -564,6 +564,12 @@ nav button:hover:after,
   color: #ffff;
   text-transform: uppercase;
   font-weight: 800;
+}
+
+
+.logo img {
+  width: 65px;
+  height: 65px;
 }
 
 .intro h1 {
@@ -2358,6 +2364,14 @@ nav button:hover:after,
   border-radius: 0;
   border: 3px solid rgba(184, 0, 63, 1);
   font-size: 18px;
+}
+
+.sec4_ourwork .nav-tabs .nav-link:hover{
+  color: white !important;
+}
+
+.sec4_ourwork .nav-tabs .nav-link::after{
+  display: none;
 }
 
 .sec4_ourwork .nav-tabs .nav-link:nth-child(1) {

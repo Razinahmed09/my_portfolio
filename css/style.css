@@ -1003,6 +1003,16 @@ nav button:hover:after,
   font-size: 45px;
 }
 
+.sec3-port .about-child h2 span {
+      background: linear-gradient(90deg, rgba(233, 30, 99, 1) 33%, rgb(232, 232, 232) 88%, rgba(184, 0, 63, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+}
+
+
 .sec3-port .about-child h2::after {
   content: '';
   position: absolute;
@@ -2856,10 +2866,12 @@ nav button:hover:after,
 }
 
 .contact-section .left-heading span {
-  background: var(--grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    background: linear-gradient(90deg, rgba(233, 30, 99, 1) 33%, rgb(232, 232, 232) 88%, rgba(184, 0, 63, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
 }
 
 .contact-section .left-sub {
@@ -4770,6 +4782,9 @@ footer .footertext p strong {
     font-size: 22px;
     letter-spacing: 1px;
   }
+   .sec3-port .about-child h2 {
+        font-size: 25px;
+    }
 
   .mb_intro {
     margin-bottom: 0;
@@ -4818,6 +4833,9 @@ footer .footertext p strong {
   .btn {
     transform: scale(.7) !important;
   }
+  .sec3-port .about-child h2 {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 367px) {

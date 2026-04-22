@@ -2076,7 +2076,7 @@ nav button:hover:after,
   left: 15px;
   bottom: 20px;
   width: 10%;
-  z-index: 20;
+  z-index: 222;
 }
 
 .social-buttons {

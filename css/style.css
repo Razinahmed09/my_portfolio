@@ -4539,7 +4539,7 @@ footer .footertext p strong {
   }
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 576px) {
 
   .sec5_contactUs .inputBox span,
   .sec5_contactUs .inputBox1 span {

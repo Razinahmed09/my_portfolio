@@ -4664,7 +4664,7 @@ footer .footertext p strong {
     font-size: 15px;
   }
 
-  .btn {
+ .top_nav  .btn {
     transform: scale(.8) !important;
   }
 

@@ -4710,7 +4710,7 @@ footer .footertext p strong {
     height: 440px;
     width: 466px;
     margin-top: 18px;
-    margin-left: -145px;
+    margin-left: -125px;
   }
 
   .card-body {
@@ -4818,6 +4818,15 @@ footer .footertext p strong {
   footer .footertext p {
       margin-bottom: 4rem;
   }
+  .card_img img {
+    height: auto;
+  }
+}
+
+@media screen and (min-width:476px) and (max-width: 576px) { 
+    .sec3-port .port_disrip img {
+          margin-left: -100px;
+    }
 }
 
 
@@ -4831,7 +4840,9 @@ footer .footertext p strong {
     width: 50px;
     height: 50px;
   }
-
+  .sec3-port .port_disrip img {
+      margin-left: -145px;
+  }
   .top_nav {
     padding: 5px 10px;
   }

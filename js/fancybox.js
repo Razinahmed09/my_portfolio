@@ -105,3 +105,47 @@ window.addEventListener("scroll", function () {
 
 
 
+document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+const scrollButtons = document.querySelectorAll(".scroll-next");
+
+scrollButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        const currentSection = this.closest("section");
+
+        const nextSection = currentSection.nextElementSibling;
+
+        if (nextSection) {
+            nextSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+    });
+
+});
+
+
+const hero = document.querySelector(".hero");
+const backToTop = document.querySelector(".fixedBottomtoTop");
+
+const heroobserver = new IntersectionObserver((entries) => {
+
+    if (entries[0].isIntersecting) {
+        backToTop.classList.remove("show");
+    } else {
+        backToTop.classList.add("show");
+    }
+
+}, {
+    threshold: 0.2
+});
+
+heroobserver.observe(hero);

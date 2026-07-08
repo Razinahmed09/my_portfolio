@@ -344,7 +344,19 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   border: 2px solid #cfcfcf;
   transition: all .3s ease-in-out;
+  opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+
+    transition: all 0.35s ease;
 }
+
+.fixedBottomtoTop.show a {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 
 .fixedBottomtoTop:hover a {
   background: white;
@@ -408,8 +420,12 @@ ul {
 
 /* From Uiverse.io by CristianMontoya98 */
 
+.navBtnRight {
+  display: flex;
+}
+
 .btn {
-  width: 6.5em;
+  width: auto;
   height: 2.3em;
   margin: 0.5em;
   background: linear-gradient(90deg,
@@ -426,8 +442,14 @@ ul {
   z-index: 1;
   animation: pulse 1.7s infinite;
   overflow: hidden;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
-
+.btn i {
+  font-size: 24px;
+}
 .lottie_header {
   bottom: -50px;
   left: -70px;
@@ -625,12 +647,13 @@ nav button:hover:after,
 
 .top_to_bottom a {
   display: block;
-  color: white;
+  color: white !important;
   font-size: 25px;
   position: absolute;
   bottom: 0;
   right: 0;
   transform: rotate(90deg);
+  cursor: pointer;
 }
 
 .top_to_bottom a i {
@@ -1322,15 +1345,22 @@ nav button:hover:after,
 }
 
 .exp-section .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--pink);
-  font-weight: 500;
-  margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #9a7e90;
+    margin-bottom: 18px;
+    background: #f0f8ff14;
+    backdrop-filter: blur(8px);
+    max-width: max-content;
+    margin: 0 auto 18px auto;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 700;
 }
 
 .exp-section .eyebrow::before,

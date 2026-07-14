@@ -379,7 +379,7 @@ nav {
   padding: 1rem 0;
 }
 
-nav::before {
+.topNAVBAR::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -581,11 +581,12 @@ nav button:hover:after,
 }
 
 .top_nav h3 {
-  font-family: ITC-Gardepro-Bold;
-  letter-spacing: 2px;
-  color: #ffff;
-  text-transform: uppercase;
-  font-weight: 800;
+    font-family: ITC-Gardepro-Bold;
+    letter-spacing: 2px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 
@@ -3177,17 +3178,29 @@ nav button:hover:after,
 }
 
 .contact-section .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--pink);
-  font-weight: 500;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: fadeUp 0.6s ease forwards 0.1s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--pink);
+    font-weight: 500;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.1s;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #9a7e90;
+    margin-bottom: 18px;
+    background: #f0f8ff14;
+    backdrop-filter: blur(8px);
+    max-width: max-content;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 700;
 }
 
 .contact-section .eyebrow::before {
@@ -3199,7 +3212,7 @@ nav button:hover:after,
 
 .contact-section .left-heading {
   color: white;
-  font-size: clamp(36px, 5vw, 58px);
+  font-size: clamp(36px, 5vw, 48px);
   font-weight: 800;
 
 
@@ -3486,10 +3499,11 @@ nav button:hover:after,
 
 /* submit row */
 .contact-section .submit-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0px;
 }
 
 .contact-section .btn-submit {
@@ -4068,7 +4082,7 @@ footer .footertext p strong {
   }
 
   #TopBarID button {
-    width: 112px;
+    width: 118px;
     font-size: 16px;
   }
 
@@ -4128,7 +4142,9 @@ footer .footertext p strong {
   .sec4_ourwork main {
     padding: 5rem 2rem;
   }
-
+  .contact-section{
+      margin: 0 2rem 5rem 2rem;
+  }
   .page_no h3 {
     font-size: 110px;
   }
@@ -4269,7 +4285,7 @@ footer .footertext p strong {
   }
 
   #TopBarID button {
-    width: 112px;
+    width: 120px;
     font-size: 16px;
   }
 
@@ -4523,7 +4539,7 @@ footer .footertext p strong {
   }
 
   #TopBarID button {
-    width: 112px;
+    width: 115px;
     font-size: 16px;
   }
 
@@ -4810,6 +4826,10 @@ footer .footertext p strong {
     width: 100% !important;
     height: 100% !important;
   }
+   .uncard_parent .anchor_parent{
+      width: 60%;
+      margin: 1.5rem auto;
+  }
 }
 
 
@@ -4839,7 +4859,9 @@ footer .footertext p strong {
   #navbar.active {
     padding: 15px 15px;
   }
-
+  .uncard_parent .anchor_parent {
+      width: 80%;
+  }
   #TopBarID .un_width {
     width: 130px !important;
   }
@@ -4947,6 +4969,8 @@ footer .footertext p strong {
   .nav_brand {
     display: none !important;
   }
+
+ 
 
   .top_nav {
     align-items: center;
@@ -5171,6 +5195,9 @@ footer .footertext p strong {
   .card_img img {
     height: auto;
   }
+  .uncard_parent .anchor_parent {
+        width: 100%;
+    }
    .razin-skills-section .sk-subtext {
         font-size: 14px;
   }
@@ -5183,6 +5210,9 @@ footer .footertext p strong {
   .razin-skills-section .sk-heading {
     font-size: 28px !important;
   }
+      .razin-skills-section .sk-label {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:476px) and (max-width: 576px) {
@@ -5212,7 +5242,7 @@ footer .footertext p strong {
   }
 
   .top_nav h3 {
-    font-size: 15px;
+            font-size: 14px;
   }
 
   #navbar.active {
@@ -5220,7 +5250,7 @@ footer .footertext p strong {
   }
 
   .btn {
-    transform: scale(.7) !important;
+    /* transform: scale(.7) !important; */
   }
 
   .sec3-port .about-child h2 {
@@ -5241,7 +5271,7 @@ footer .footertext p strong {
   }
 
   .top_nav h3 {
-    font-size: 14px;
+      font-size: 12px;
   }
 
   .top_nav {
